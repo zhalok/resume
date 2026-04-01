@@ -1,5 +1,5 @@
 {
-  "fields_to_show": ["work", "skills", "projects", "certificates", "education"],
+  "fields_to_show": ["work", "skills", "projects", "publications", "certificates", "education"],
   "basics": {
     "name": "Zhalok Rahman",
     "label": "Software Engineer 2 at Datatree Technology",
@@ -19,28 +19,32 @@
       "position": "Software Engineer 2",
       "startDate": "2025-04-01",
       "highlights": [
-        "Worked with Kinetik Healthcare's Trip Assistant team as a contractor from Datatree Technology.",
-        "Fixed SQS and Lambda based bulk dispatch workflow to ensure only corrupted trips are not dispatched in the batch.",
-        "Implemented realtime notification system using MongoDB CDC, Redis Streams, and WebSocket.",
-        "Designed RBAC mechanism with Access Control Matrix and ensured realtime revocation with CDC streams.",
-        "Migrated trip dashboard to AG Grid for smoother and cleaner implementation.",
-        "Conducted load testing on APIs and monitored resource usage under stress from CloudWatch."
+        "Enhanced existing lambda based services writen in Node JS",
+        "Migrated legacy Node JS service into Modern NestJS framework",
+        "Implemented push based realtime system using Redis PubSub",
+        "Generated notifications and pushed in Redis Streams via MongoDB CDC realm trigger",
+        "Implemented RBAC validation and realtime access revoke on role change",
+        "Built endpoints for AI agent tool calls",
+        "Built AI call center agent with ElevenLabs",
+        "Integrated human call center as fallback for AI callcenter service",
+        "Built python scripts with Elevenlabs SDK to manage and deploy agent on CI/CD trigger",
+        "Managed infrastructure in AWS ECS",
+        "Debugged build and deployment issues"
       ]
     },
     {
       "name": "PropertyFinder",
       "position": "Software Engineer",
       "startDate": "2024-10-01",
-      "endDate": "2025-10-31",
+      "endDate": "2026-03-31",
       "highlights": [
-        "Worked in their listing b2b engineering backend as contractor from All Generation Tech",
-        "Built API endpoints with API Gateway, Lambda (go), DynamoDB and Opensearch",
+        "Worked on B2B modernization with Golang and AWS based services like DynamoDB, Lambda, SQS, ECS",
         "Performed load testing experiment with go script and created a dashboard with necessary metrics to observe the changes in high load",
         "Implemented asynchronous business logics with SQS, Lambda (go) and Kinesis streams",
-        "Fixed and investigated production incidents, ",
-        "Collaborated with data engineering team for fixing data migration issues",
-        "Deployed application with serverless framework and github actions",
-        "Written go scripts for resolving incident and migration of data"
+        "Fixed and investigated production incidents",
+        "Collaborated with data engineering team for fixing data discrepancy issues during migration",
+        "Written go scripts for resolving incident and migration of data",
+        "Fixed github actions deployment failures"
       ]
     },
     {
@@ -49,18 +53,12 @@
       "startDate": "2023-10-01",
       "endDate": "2025-02-01",
       "highlights": [
-        "Built RESTful API endpoints with Nest JS and Built front-end components with React JS, fetched data with TanStack Query.",
-        "Built AI generation pipeline with Python, FastAPI, and Langchain and used websocket for realtime AI generation streaming",
-        "Offloaded time consuming operations like image generation asynchronously with RabbitMQ",
-        "Implemented usage based rate limiting and locked the user for a certain period with redis TTL ",
-        "Prepared a home server as a staging server with NGINX, Ngrok and docker for UAT",
-        "Participated in business decisions from technical point of view with business stakeholders",
-        "Designed architectures and solution diagrams",
-        "Guided a small team of 2-3 people on different architectures and best practices",
-        "Decoupled heavy operations as async jobs with RabbitMQ",
-        "Built search efficient functionality with elasticsearch",
-        "Implemented payment feature with stripe, synced stripe data across the system with webhook",
-        "Deployed and managed application infrastructure with containerization into self hosted environment with coolify"
+        "Built AI generation service with Langchain, FastAPI and OpenAI models",
+        "Built websocket and server sent events endpoints for realtime AI generation delivery",
+        "Created RabbitMQ consumers for handling heavy workloads asyncly with PikaClient",
+        "Offloaded event loop blocking sync tasks into background tasks",
+        "Scheduled gathered coroutines for concurrent resolutions",
+        "Traced event loop blocking issues with sync operations and optimized the response time"
       ]
     },
     {
@@ -73,20 +71,8 @@
         "Implemented payment and monetary transaction features by integrating third party payment gateways (stripe and paypal)",
         "Built client side application with Next JS, used Redux for efficient data fetching and dataflow",
         "Built an internal monetization system with credits, ensured smooth credit transfer with mongodb sessions",
-        "Built server with FastAPI for inferencing fine-tuned object detection model in onnx format"
-      ]
-    },
-    {
-      "show": false,
-      "name": "CodexPro",
-      "position": "Scratch and Python Instructor ",
-      "startDate": "2021-09-01",
-      "endDate": "2022-10-01",
-      "highlights": [
-        "Conducted mentorship on Python and Scratch",
-        "Collaborated with marketing team on different offline and onsite campaigns",
-        "Prepared educational contents for programming",
-        "Collaborated with the technical team"
+        "Built server with FastAPI for inferencing fine-tuned object detection model in onnx format",
+        "Created scripts for data preprocessing and training models"
       ]
     }
   ],
@@ -113,52 +99,31 @@
       "summary": "Learned about internal architecture of node js, event loop, asyncio, node js child process, node js worker threads, efficient usage of node js for building scalable backend applications"
     },
     {
-      "name": "Supervised Machine Learning: Regression and Classification",
-      "url": "https://www.coursera.org/account/accomplishments/certificate/SZT92254XUUY",
-      "issuer": "Coursera",
-      "summary": "Learned about foundational fundamental of regression and classification machine learning algorithms"
+      "name": "Fundamentals of Netowrk Engineering",
+      "url": "https://www.udemy.com/certificate/UC-0a49d23e-036a-4c80-ad5a-410ccb877ebb/",
+      "issuer": "Udemy",
+      "summary": "Learned about how servers work at the core, how different layer protocls work and what are the challenges"
     },
     {
-      "name": "Computer Vision",
-      "show": false,
-      "url": "https://www.kaggle.com/learn/certification/zhalokrahman/computer-vision",
-      "issuer": "Kaggle",
-      "summary": "Learned about convolutional neural network, finetuning a CNN with pretrained base with a head and training the head, implementation with python and tensorflow etc"
+      "name":"Supervised Machine Learning: Regression and Classification",
+      "url":"https://coursera.org/share/0ef4defbf44ee7d868c52c7e1a3bb94f",
+      "issuer":"Coursera",
+      "summary":"Supervised learning from scratch, learning about mathematical algorithms working as backbone of machine learning models"
     }
   ],
-  "skills": [
+  "publications": [
     {
-      "name": "React JS"
-    },
-    {
-      "name": "Node JS (Nest JS, Express JS)"
-    },
-    {
-      "name": "Next JS"
-    },
-    {
-      "name": "Microservices"
-    },
-    {
-      "name": "PostreSQL"
-    },
-    {
-      "name": "Python (Fastapi, asyncio)"
-    },
-    {
-      "name": "Docker"
-    },
-    {
-      "name": "MongoDB"
-    },
-    {
-      "name": "NLP, LLM"
-    },
-    {
-      "name": "Computer Vision"
-    },
-    {
-      "name": "Pytorch"
+      "name": "Optical Mark Recognition with Object Detection and Clustering",
+      "publisher": "2024 6th International Conference on Electrical Engineering and Information and Communication Technology (ICEEICT)",
+      "releaseDate": "May 2024",
+      "url": "https://doi.org/10.1109/ICEEICT62016.2024.10534561",
+      "contributions":[
+        "Writen scripts for generating synthetic training data",
+        "Built training scripts with ultralytics for training lightweight YOLO models",
+        "Implemented clustering based unsupervised algorithm for column detection and serialization of answers",
+        "Exported fintuned model in Onnx format for inferencing via API",
+        "demo: https://www.youtube.com/watch?v=BiEybE5qQqw"
+      ]
     }
   ],
   "projects": [
@@ -186,16 +151,6 @@
       ]
     },
     {
-      "name": "Go Http From Scratch System Calls",
-      "url": "https://github.com/zhalok/go-http-from-scratch-system-calls",
-      "stack": ["Golang", "Syscalls", "OSSignals", "Sockets"],
-      "contributions": [
-        "Built http protocol from sockets and systemcalls",
-        "Prsed HTTP request headers and payload",
-        "Handled graceful connection closing"
-      ]
-    },
-    {
       "name": "AI Product Search",
       "url": "https://github.com/zhalok/ai-product-search",
       "stack": ["FastAPI", "VectorDB (Qdrant)", "RabbitMQ", "SBERT"],
@@ -203,17 +158,6 @@
         "Built async vector indexing pipeline from csv file with RabbitMQ and Qdrant",
         "Built inferencing and searching pipeline with FastAPI",
         "Used finetuned self hosted SBERT model for generating embedding"
-      ]
-    },
-    {
-      "name": "Ecommerce GraphQL Backend",
-      "url": "https://github.com/zhalok/ecommerce-graphql-backend",
-      "stack": ["Nest JS", "GraphQL", "Prisma", "Postgresql"],
-      "contributions": [
-        "Built product crud operations with role based access control using NestJS and TypeScript",
-        "Used GraphQL for serving endpoints",
-        "Used Prisma for database operations",
-        "Demo: https://www.loom.com/share/467b33c9742845a2bb78b84d633fb3cf"
       ]
     }
   ]

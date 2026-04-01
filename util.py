@@ -1,7 +1,15 @@
 import re
 
+def escape_latex(text):
+    """Escape special LaTeX characters."""
+    special_chars = {'&': r'\&', '%': r'\%', '#': r'\#', '_': r'\_'}
+    for char, escaped in special_chars.items():
+        text = text.replace(char, escaped)
+    return text
+
 def apply_bold_markers(text):
     """Convert **text** markers to \\textbf{text} in LaTeX."""
+    text = escape_latex(text)
     return re.sub(r'\*\*(.+?)\*\*', r'\\textbf{\1}', text)
 
 def get_section_renderers(data, latex):
@@ -131,13 +139,41 @@ def get_section_renderers(data, latex):
                 )
             latex.append(r"\vspace{2pt}")
 
+    def render_publications():
+        publications = data.get("publications", [])
+        if publications:
+            latex.append(r"\section*{Publications}")
+            for pub in publications:
+                if "show" in pub and pub["show"] == False:
+                    continue
+                title = pub.get("name", "")
+                publisher = pub.get("publisher", "")
+                release_date = pub.get("releaseDate", "")
+                url = pub.get("url", "")
+
+                latex.append(r"\textbf{%s}\\" % escape_latex(title))
+                if publisher:
+                    latex.append(r"\small %s" % escape_latex(publisher))
+                if release_date:
+                    latex.append(r"\hfill \textit{%s}\\" % release_date)
+                if url:
+                    latex.append(r"\small \url{%s}\\" % url)
+                contributions = pub.get("contributions", [])
+                if contributions:
+                    latex.append(r"\begin{itemize}")
+                    for contribution in contributions:
+                        latex.append(r"\item %s" % apply_bold_markers(contribution))
+                    latex.append(r"\end{itemize}")
+            latex.append(r"\vspace{2pt}")
+
     # Map field names to their render functions
     section_renderers = {
         "work": render_work,
         "skills": render_skills,
         "projects": render_projects,
         "certificates": render_certificates,
-        "education": render_education
+        "education": render_education,
+        "publications": render_publications
     }
 
     return section_renderers
