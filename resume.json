@@ -1,21 +1,5 @@
 {
-  "fields_to_show": [
-    "skills",
-    "education",
-    "work",
-    "publications",
-    "certificates"
-  ],
-  "fields_to_show_portfolio": [
-    "summary",
-    "skills",
-    "education",
-    "work",
-    "publications",
-    "certificates",
-    "blogs",
-    "projects"
-  ],
+  "fields_to_show": ["work", "skills", "projects", "publications", "certificates", "education"],
   "basics": {
     "name": "Zhalok Rahman",
     "label": "Software Engineer 2 at Datatree Technology",
@@ -40,38 +24,32 @@
       "position": "Software Engineer 2",
       "startDate": "2025-04-01",
       "highlights": [
-        "Built **Florence** an **AI voice assistant** which handles around 80 percent of our ride initiation requests",
-        "Developed internal **VoIP** testing tools for simulating calls for the voice agent",
-        "Built a source control pipeline to manage **11Labs agent as code**",
-        "Managed **CI/CD pipeline** for deploying agent",
-        "Integrated Intercom based human agent call center with AI call center for transferring calls as fallback",
-        "Built **Grafana dashboard** for monitoring the AI agent performance",
-        "Contributed to **Langgraph** based orchestrator service for a large scale **AI Agent**",
-        "Enhanced realtime notification pipeline with push based mechanism with **Redis Pub/Sub**, **CDC**, **Redis Streams**",
-        "Migrated legacy code from **Express JS** to **Nest JS** for cleaner domain driven design",
-        "Enhanced existing **RBAC** system with realtime access revocation",
-        "Investigated production incidents based on logs and traces from **CloudWatch** and **Grafana**",
-        "Optimized MongoDB query performance by **41 percent** using covered atlas search index scan",
-        "Reduced network content download time by **66 percent** with default query projection",
-        "Conducted AI-driven development using **Kiro**"
+        "Enhanced existing lambda based services writen in Node JS",
+        "Migrated legacy Node JS service into Modern NestJS framework",
+        "Implemented push based realtime system using Redis PubSub",
+        "Generated notifications and pushed in Redis Streams via MongoDB CDC realm trigger",
+        "Implemented RBAC validation and realtime access revoke on role change",
+        "Built endpoints for AI agent tool calls",
+        "Built AI call center agent with ElevenLabs",
+        "Integrated human call center as fallback for AI callcenter service",
+        "Built python scripts with Elevenlabs SDK to manage and deploy agent on CI/CD trigger",
+        "Managed infrastructure in AWS ECS",
+        "Debugged build and deployment issues"
       ]
     },
     {
       "name": "PropertyFinder",
       "position": "Software Engineer",
       "startDate": "2024-10-01",
-      "endDate": "2025-10-31",
+      "endDate": "2026-03-31",
       "highlights": [
-        "Ensured reliability and performance of **Golang** based B2B platform",
-        "**Traced race conditions** between distributed services that was causing p1 incidents and confusing user experiences",
-        "Investigated and fixed root cause of critical production incidents using metrics, logs, and traces from **Grafana**",
-        "Conducted **Load Testing** and built dashboards to observe the performance of the entire system under high stress",
-        "Written scripts for data fix to mitigate incidents",
-        "Contributed to the modernization of B2B service, making architectural decisions and strategies for efficient migration",
-        "Written unit tests to ensure **80 percent coverage**",
-        "Designed asynchronous event-driven pipelines using **SQS** and **Kinesis Streams**",
-        "Configured alerts in **Grafana** with **Slack** integration for real-time notification on any potential incident",
-        "Used **Windsurf** for studying legacy codebases efficiently"
+        "Worked on B2B modernization with Golang and AWS based services like DynamoDB, Lambda, SQS, ECS",
+        "Performed load testing experiment with go script and created a dashboard with necessary metrics to observe the changes in high load",
+        "Implemented asynchronous business logics with SQS, Lambda (go) and Kinesis streams",
+        "Fixed and investigated production incidents",
+        "Collaborated with data engineering team for fixing data discrepancy issues during migration",
+        "Written go scripts for resolving incident and migration of data",
+        "Fixed github actions deployment failures"
       ]
     },
     {
@@ -80,16 +58,12 @@
       "startDate": "2023-10-01",
       "endDate": "2025-02-01",
       "highlights": [
-        "Architected and built a scalable REST API with **NestJS**",
-        "Designed an AI generation pipeline using **LangChain** for structured prompt management and multi-step chaining",
-        "Integrated **Langfuse** for LLM observability, enabling cost tracking and performance tracing across model calls",
-        "Decoupled heavy workloads from the main request cycle using asynchronous **RabbitMQ** consumers, improving resource efficiency",
-        "Enhanced UX by implementing real-time streaming of AI-generated responses",
-        "Optimized load performance using a hybrid lazy-loading and preloading strategy",
-        "Acted as a technical advisor in stakeholder discussions, bridging engineering constraints with business goals",
-        "Mentored a team of 3 engineers on system architecture patterns and backend best practices",
-        "Managed self-hosted infrastructure on **AWS EC2** using **Coolify**, supporting **500+ active users**",
-        "Integrated **Stripe** to handle recurring billing, subscription lifecycle, and payment management"
+        "Built AI generation service with Langchain, FastAPI and OpenAI models",
+        "Built websocket and server sent events endpoints for realtime AI generation delivery",
+        "Created RabbitMQ consumers for handling heavy workloads asyncly with PikaClient",
+        "Offloaded event loop blocking sync tasks into background tasks",
+        "Scheduled gathered coroutines for concurrent resolutions",
+        "Traced event loop blocking issues with sync operations and optimized the response time"
       ]
     },
     {
@@ -98,24 +72,12 @@
       "startDate": "2022-12-01",
       "endDate": "2023-10-01",
       "highlights": [
-        "Built features for online healthcare platform with NextJS, Express JS, MongoDB",
-        "Integrated Stripe and Paypal payment gateways",
-        "Synced client app in realtime with webhook event",
-        "Implemented safe transactional credit transfer with MongoDB sessions",
-        "Built YOLO inference pipeline with ONNX runtime"
-      ]
-    },
-    {
-      "show": false,
-      "name": "CodexPro",
-      "position": "Scratch and Python Instructor ",
-      "startDate": "2021-09-01",
-      "endDate": "2022-10-01",
-      "highlights": [
-        "Conducted mentorship on Python and Scratch",
-        "Collaborated with marketing team on different offline and onsite campaigns",
-        "Prepared educational contents for programming",
-        "Collaborated with the technical team"
+        "Built REST apis with Nest JS, Express JS and FastAPI (for deploying  fine-tuned model)",
+        "Implemented payment and monetary transaction features by integrating third party payment gateways (stripe and paypal)",
+        "Built client side application with Next JS, used Redux for efficient data fetching and dataflow",
+        "Built an internal monetization system with credits, ensured smooth credit transfer with mongodb sessions",
+        "Built server with FastAPI for inferencing fine-tuned object detection model in onnx format",
+        "Created scripts for data preprocessing and training models"
       ]
     }
   ],
@@ -202,61 +164,16 @@
       "summary": "Learned about under the hood mechanisms of network protocols"
     },
     {
-      "name": "Supervised Machine Learning: Regression and Classification",
-      "url": "https://www.coursera.org/account/accomplishments/certificate/SZT92254XUUY",
-      "issuer": "Coursera",
-      "summary": "Learned about foundational fundamental of regression and classification machine learning algorithms"
+      "name": "Fundamentals of Netowrk Engineering",
+      "url": "https://www.udemy.com/certificate/UC-0a49d23e-036a-4c80-ad5a-410ccb877ebb/",
+      "issuer": "Udemy",
+      "summary": "Learned about how servers work at the core, how different layer protocls work and what are the challenges"
     },
     {
-      "name": "Computer Vision",
-      "show": false,
-      "url": "https://www.kaggle.com/learn/certification/zhalokrahman/computer-vision",
-      "issuer": "Kaggle",
-      "summary": "Learned about convolutional neural network, finetuning a CNN with pretrained base with a head and training the head, implementation with python and tensorflow etc"
-    }
-  ],
-  "skills": [
-    {
-      "name": "Golang"
-    },
-    {
-      "name": "Python (FastAPI, Asyncio, Pytorch, Pandas)"
-    },
-    {
-      "name": "Node JS (Nest JS, Express JS, Koa)"
-    },
-    {
-      "name": "JavaScript/TypeScript (React JS, Next JS"
-    },
-    {
-      "name": "PostgreSQL"
-    },
-    {
-      "name": "MongoDB"
-    },
-    {
-      "name": "Redis (Cache, Pub/Sub, Streams)"
-    },
-    {
-      "name": "RabbitMQ"
-    },
-    {
-      "name": "WebSocket, SSE"
-    },
-    {
-      "name": "Docker"
-    },
-    {
-      "name": "AWS (ECS, CloudWatch, SQS, Kinesis, Lambda, OpenSearch, DynamoDB)"
-    },
-    {
-      "name": "Grafana"
-    },
-    {
-      "name": "Prometheus"
-    },
-    {
-      "name": "CI/CD (Github Actions, CodePipeline"
+      "name":"Supervised Machine Learning: Regression and Classification",
+      "url":"https://coursera.org/share/0ef4defbf44ee7d868c52c7e1a3bb94f",
+      "issuer":"Coursera",
+      "summary":"Supervised learning from scratch, learning about mathematical algorithms working as backbone of machine learning models"
     }
   ],
   "projects": [
@@ -328,16 +245,6 @@
       ]
     },
     {
-      "name": "Go Http From Scratch System Calls",
-      "url": "https://github.com/zhalok/go-http-from-scratch-system-calls",
-      "stack": ["Golang", "Syscalls", "OSSignals", "Sockets"],
-      "contributions": [
-        "Built http protocol from sockets and systemcalls",
-        "Handled graceful connection closing by handling OS signals",
-        "Built HTTP request body parser using basic string libraries"
-      ]
-    },
-    {
       "name": "AI Product Search",
       "url": "https://github.com/zhalok/ai-product-search",
       "stack": ["FastAPI", "VectorDB (Qdrant)", "RabbitMQ", "SBERT"],
@@ -346,16 +253,6 @@
         "Built async vector indexing pipeline from csv file with RabbitMQ and Qdrant",
         "Built inferencing and searching pipeline with FastAPI",
         "Used finetuned self hosted SBERT model for generating embedding"
-      ]
-    },
-    {
-      "name": "Integration Gateway",
-      "url": "https://github.com/zhalok/integration-gateway",
-      "stack": ["Golang"],
-      "show": true,
-      "contributions": [
-        "Built a simple API endpoint that aggregates data from 3 different sources",
-        "Implemented channel based async data aggregation pipeline with retry mechanism"
       ]
     }
   ]
