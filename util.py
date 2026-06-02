@@ -131,13 +131,44 @@ def get_section_renderers(data, latex):
                 )
             latex.append(r"\vspace{2pt}")
 
+    def render_publications():
+        publications = data.get("publications", [])
+        if publications:
+            latex.append(r"\section*{Publications}")
+            for pub in publications:
+                if "show" in pub and pub["show"] == False:
+                    continue
+                pub_name = pub.get("name", "")
+                publisher = pub.get("publisher", "")
+                release_date = pub.get("releaseDate", "")
+                url = pub.get("url", "")
+                contributions = pub.get("contributions", [])
+
+                latex.append(r"\textbf{%s}\\" % pub_name)
+                if publisher:
+                    latex.append(r"\textit{%s}" % publisher)
+                if release_date:
+                    latex.append(r"\hfill \textit{%s}\\" % release_date)
+
+                if url:
+                    latex.append(r"\small %s\\" % url)
+
+                if contributions:
+                    latex.append(r"\begin{itemize}")
+                    for contribution in contributions:
+                        latex.append(r"\item %s" % apply_bold_markers(contribution))
+                    latex.append(r"\end{itemize}")
+
+            latex.append(r"\vspace{2pt}")
+
     # Map field names to their render functions
     section_renderers = {
         "work": render_work,
         "skills": render_skills,
         "projects": render_projects,
         "certificates": render_certificates,
-        "education": render_education
+        "education": render_education,
+        "publications": render_publications
     }
 
     return section_renderers

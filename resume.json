@@ -1,5 +1,5 @@
 {
-  "fields_to_show": ["work", "education","certificates"],
+  "fields_to_show": ["work","publications","projects","certificates"],
   "basics": {
     "name": "Zhalok Rahman",
     "label": "Software Engineer 2 at Datatree Technology",
