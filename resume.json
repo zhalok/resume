@@ -288,18 +288,17 @@
         "Conducted stress testing with high load concurrency simulation with goroutines",
         "Observed resource usages of containers via cAdvisor",
         "Scraped metrics from cAdvisor using prometheus and showed them in Grafana",
-        "Demo: https://www.loom.com/share/35d3386fd0174b98b721c1033cf002f8"
+        "Demo: https://bit.ly/3UFJfPx"
       ]
     },
     {
       "name": "Remote Browser Control",
       "url": "https://github.com/zhalok/remote-browser-control",
-      "show": false,
       "stack": ["Playwright", "Python", "FastAPI", "WebSocket"],
       "contributions": [
         "Built FastAPI app for receiving commands for playwright to apply on browser session via websocket and emit current snapshot of the browser",
         "Created a front end app with react to render the remote browser session and also send commands via websocket",
-        "Demo: https://www.loom.com/share/04b79ed90e344c94a2c50a5b790cda73"
+        "Demo: https://bit.ly/4wDD7om"
       ]
     },
     {
