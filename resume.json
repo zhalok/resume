@@ -29,8 +29,8 @@
         "url": "https://www.linkedin.com/in/zhalok-rahman/"
       },
       {
-        "network":"Github",
-        "url":"https://github.com/zhalok"
+        "network": "Github",
+        "url": "https://github.com/zhalok"
       }
     ]
   },
@@ -255,7 +255,7 @@
     }
   ],
   "projects": [
-        {
+    {
       "name": "MongoDB vs PostgreSQL benchmarking for storing documents",
       "url": "https://github.com/zhalok/mongodb-bson-vs-postgres-jsonb-benchmarking",
       "stack": ["Golang", "JavaScript"],
@@ -269,14 +269,14 @@
         "Built grafana dashboard to observe the metrics"
       ]
     },
-        {
+    {
       "name": "Obstainer",
       "url": "https://github.com/zhalok/obstainer",
       "stack": ["Golang"],
       "show": true,
       "contributions": [
-       "Built prometheus scraper for extracting container metrics from cgroup",
-       "Visualized container metrics in grafana dashboard"
+        "Built prometheus scraper for extracting container metrics from cgroup",
+        "Visualized container metrics in grafana dashboard"
       ]
     },
     {
