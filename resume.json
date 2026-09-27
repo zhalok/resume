@@ -275,6 +275,17 @@
         "Built grafana dashboard to observe the metrics"
       ]
     },
+        {
+      "name": "postgrespector",
+      "url": "https://github.com/zhalok/postgrespector",
+      "stack": ["Golang", "JavaScript"],
+      "show": true,
+      "contributions": [
+        "Built prometheus exporter for heap usage, execution time",
+        "Built prometheus exporter for container metrics",
+        "Visualized metrics in grafana dashboard"
+      ]
+    },
     {
       "name": "Obstainer",
       "url": "https://github.com/zhalok/obstainer",
