@@ -275,8 +275,8 @@
       ]
     },
     {
-      "name": "postgrespector",
-      "url": "https://github.com/zhalok/postgrespector",
+      "name": "PostgreSPECTOR",
+      "url": "https://github.com/zhalok/PostgreSPECTOR.git",
       "stack": [
         "Golang",
         "Prometheus",
