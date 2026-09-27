@@ -178,6 +178,12 @@
   ],
   "certificates": [
     {
+      "name":"AWS Certified Cloud Practitioner",
+      "url":"https://www.credly.com/badges/201260d3-12e0-4d22-a49f-4e64d68b348e/linked_in_profile",
+      "issuer":"AWS",
+      "summary": "Deep dive on AWS services"
+    },
+    {
       "name": "Fundamentals of Operating Systems",
       "url": "https://www.udemy.com/certificate/UC-ff0d44a3-8917-40cd-aef9-a01e258aee49/",
       "issuer": "Udemy",
