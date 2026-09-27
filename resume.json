@@ -1,11 +1,5 @@
 {
-  "fields_to_show": [
-    "skills",
-    "education",
-    "work",
-    "publications",
-    "certificates"
-  ],
+  "fields_to_show": ["skills", "education", "certificates", "work", "projects"],
   "fields_to_show_portfolio": [
     "summary",
     "skills",
@@ -26,7 +20,7 @@
     "profiles": [
       {
         "network": "linkedin",
-        "url": "https://www.linkedin.com/in/zhalok-rahman/"
+        "url": "https://www.linkedin.com/in/zhalok-rahman"
       },
       {
         "network": "Github",
@@ -40,20 +34,10 @@
       "position": "Software Engineer 2",
       "startDate": "2025-04-01",
       "highlights": [
-        "Built **Florence** an **AI voice assistant** which handles around 80 percent of our ride initiation requests",
-        "Developed internal **VoIP** testing tools for simulating calls for the voice agent",
-        "Built a source control pipeline to manage **11Labs agent as code**",
-        "Managed **CI/CD pipeline** for deploying agent",
-        "Integrated Intercom based human agent call center with AI call center for transferring calls as fallback",
-        "Built **Grafana dashboard** for monitoring the AI agent performance",
-        "Contributed to **Langgraph** based orchestrator service for a large scale **AI Agent**",
-        "Enhanced realtime notification pipeline with push based mechanism with **Redis Pub/Sub**, **CDC**, **Redis Streams**",
-        "Migrated legacy code from **Express JS** to **Nest JS** for cleaner domain driven design",
-        "Enhanced existing **RBAC** system with realtime access revocation",
-        "Investigated production incidents based on logs and traces from **CloudWatch** and **Grafana**",
+        "Identified slow query shapes from MongoDB profiler",
         "Optimized MongoDB query performance by **41 percent** using covered atlas search index scan",
         "Reduced network content download time by **66 percent** with default query projection",
-        "Conducted AI-driven development using **Kiro**"
+        "Enhanced read performance by keeping data denormalized and used event driven approach to update denomralized fields"
       ]
     },
     {
@@ -62,29 +46,22 @@
       "startDate": "2024-10-01",
       "endDate": "2025-10-31",
       "highlights": [
-        "Ensured reliability and performance of **Golang** based B2B platform",
-        "**Traced race conditions** between distributed services that was causing p1 incidents and confusing user experiences",
-        "Investigated and fixed root cause of critical production incidents using metrics, logs, and traces from **Grafana**",
-        "Conducted **Load Testing** and built dashboards to observe the performance of the entire system under high stress",
-        "Written scripts for data fix to mitigate incidents",
-        "Contributed to the modernization of B2B service, making architectural decisions and strategies for efficient migration",
-        "Written unit tests to ensure **80 percent coverage**",
-        "Designed asynchronous event-driven pipelines using **SQS** and **Kinesis Streams**",
-        "Configured alerts in **Grafana** with **Slack** integration for real-time notification on any potential incident",
-        "Used **Windsurf** for studying legacy codebases efficiently"
+        "Managed DynamoDB and Opensearch services",
+        "Mitigated and fixed root causes of b2b and b2c database inconsistencies",
+        "Fixed legacy data inconsistencies in production",
+        "Resolved data migration issues",
+        "Fixed legacy data wipe out"
       ]
     },
     {
       "name": "Learnyx AI",
+      "show":false,
       "position": "Fullstack Engineer",
       "startDate": "2023-10-01",
       "endDate": "2025-02-01",
       "highlights": [
         "Architected and built a scalable REST API with **NestJS**",
-        "Designed an AI generation pipeline using **LangChain** for structured prompt management and multi-step chaining",
-        "Integrated **Langfuse** for LLM observability, enabling cost tracking and performance tracing across model calls",
         "Decoupled heavy workloads from the main request cycle using asynchronous **RabbitMQ** consumers, improving resource efficiency",
-        "Enhanced UX by implementing real-time streaming of AI-generated responses",
         "Optimized load performance using a hybrid lazy-loading and preloading strategy",
         "Acted as a technical advisor in stakeholder discussions, bridging engineering constraints with business goals",
         "Mentored a team of 3 engineers on system architecture patterns and backend best practices",
@@ -93,6 +70,7 @@
       ]
     },
     {
+      "show":false,
       "name": "Innovext IT",
       "position": "Fullstack Developer",
       "startDate": "2022-12-01",
@@ -178,26 +156,40 @@
   ],
   "certificates": [
     {
-      "name":"AWS Certified Cloud Practitioner",
-      "url":"https://www.credly.com/badges/201260d3-12e0-4d22-a49f-4e64d68b348e/linked_in_profile",
-      "issuer":"AWS",
-      "summary": "Deep dive on AWS services"
+      "name": "AWS Certified Cloud Practitioner",
+      "url": "https://www.credly.com/badges/201260d3-12e0-4d22-a49f-4e64d68b348e/",
+      "issuer": "AWS",
+      "summary": "Covered AWS core services and cloud concepts including EC2, S3, VPC, IAM, billing/pricing models, the shared responsibility model, and cloud architecture best practices"
     },
     {
-      "name": "Fundamentals of Operating Systems",
-      "url": "https://www.udemy.com/certificate/UC-ff0d44a3-8917-40cd-aef9-a01e258aee49/",
+      "name": "Fundamentals of Database Engineering",
+      "url": "https://www.udemy.com/certificate/UC-afe8cbda-1420-4cca-a833-aed013e7a6e2/",
       "issuer": "Udemy",
-      "summary": "Learned about Process structure, Memory managment, CPU cycles, I/O management"
+      "summary": "Learned about ACID, Data organization, Indexing, Partitioning, Sharding, Concurrency control, Replication, Sharding, Paritioning etc"
+    },
+    {
+      "name": "MongoDB Query Optimization Techniques",
+      "url": "https://www.credly.com/badges/68a4e8c2-4325-41fe-9e5d-1363ddde2921/",
+      "issuer": "MongoDB",
+      "summary": "This digital credential validates your knowledge in optimizing query performance using indexing, query restructuring, and execution plans. It recognizes your understanding of identifying and resolving slow queries, as well as enhancing read and write operations."
+    },
+    {
+      "name": "Optimizing MongoDB Performance with Tuning Tools",
+      "url": "https://www.credly.com/badges/e861b7b4-028a-47d4-aed6-7e586d4d95da",
+      "issuer": "MongoDB",
+      "summary": "This digital credential validates your knowledge in applying performance tuning techniques in MongoDB through profiling, slow query analysis, and system monitoring. It recognizes your understanding of analyzing query performance, optimizing indexes to improve query efficiency and reduce latency, and configuring cache utilization to enhance read efficiency and reduce database load, ensuring improved database performance at scale."
     },
     {
       "name": "Fundamentals of Network Engineering",
       "url": "https://www.udemy.com/certificate/UC-0a49d23e-036a-4c80-ad5a-410ccb877ebb/",
       "issuer": "Udemy",
+      "show":false,
       "summary": "Learned about under the hood mechanisms of network protocols"
     },
     {
       "name": "NodeJS Internals and Architecture",
       "url": "https://www.udemy.com/certificate/UC-2068cbe0-b17c-47ca-b298-d8acb94b30e2/",
+      "show": false,
       "issuer": "Udemy",
       "summary": "Learned about internal architecture of node js, event loop, node js worker threads, enhancing node js app performance"
     },
@@ -267,23 +259,18 @@
       "stack": ["Golang", "JavaScript"],
       "show": true,
       "contributions": [
-        "Ran MongoDB and PostgreSQL in docker",
-        "Built server side applications for connecting with MongoDB and PostgreSQL",
-        "Built prometheus scraper for extracting container metrics from cgroup",
-        "Built prometheus scraper for extracting database internal metrics and footprints",
-        "Writen load testing client in golang to simulate concurrent requests with Goroutines",
-        "Built grafana dashboard to observe the metrics"
+        "Collected metrics for query execution time and storage footprints of MongoDB and PostgreSQL",
+        "Benchmarked between MongoDB and PostgreSQL at scale via load testing"
       ]
     },
-        {
+    {
       "name": "postgrespector",
       "url": "https://github.com/zhalok/postgrespector",
-      "stack": ["Golang", "JavaScript"],
+      "stack": ["PostgreSQL","Prometheus","Docker","Grafana"],
       "show": true,
       "contributions": [
-        "Built prometheus exporter for heap usage, execution time",
-        "Built prometheus exporter for container metrics",
-        "Visualized metrics in grafana dashboard"
+        "Extracting PostgreSQL metrics and container metrics via Prometheus exporter",
+        "Observed metrics under stress in Grafana"
       ]
     },
     {
@@ -301,15 +288,13 @@
       "url": "https://github.com/zhalok/data-stores-python",
       "stack": ["Python", "Socket", "System Calls"],
       "contributions": [
-        "Built TCP servers with stream sockets in multi-threaded one thread per connection i/o, single-thread non-blocking i/o and single-threaded non-blocking event-driven i/o",
-        "Conducted stress testing with high load concurrency simulation with goroutines",
-        "Observed resource usages of containers via cAdvisor",
-        "Scraped metrics from cAdvisor using prometheus and showed them in Grafana",
+        "Compared between Single Threaded, Multi-threaded and Single-Threaded-Event-Driven architecture for in-memmory data store",
         "Demo: https://bit.ly/3UFJfPx"
       ]
     },
     {
       "name": "Remote Browser Control",
+      "show":false,
       "url": "https://github.com/zhalok/remote-browser-control",
       "stack": ["Playwright", "Python", "FastAPI", "WebSocket"],
       "contributions": [
@@ -332,7 +317,7 @@
       "name": "AI Product Search",
       "url": "https://github.com/zhalok/ai-product-search",
       "stack": ["FastAPI", "VectorDB (Qdrant)", "RabbitMQ", "SBERT"],
-      "show": true,
+      "show": false,
       "contributions": [
         "Built async vector indexing pipeline from csv file with RabbitMQ and Qdrant",
         "Built inferencing and searching pipeline with FastAPI",
@@ -343,7 +328,7 @@
       "name": "Integration Gateway",
       "url": "https://github.com/zhalok/integration-gateway",
       "stack": ["Golang"],
-      "show": true,
+      "show": false,
       "contributions": [
         "Built a simple API endpoint that aggregates data from 3 different sources",
         "Implemented channel based async data aggregation pipeline with retry mechanism"
