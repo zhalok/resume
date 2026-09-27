@@ -178,10 +178,16 @@
   ],
   "certificates": [
     {
-      "name":"AWS Certified Cloud Practitioner",
-      "url":"https://www.credly.com/badges/201260d3-12e0-4d22-a49f-4e64d68b348e/linked_in_profile",
-      "issuer":"AWS",
+      "name": "AWS Certified Cloud Practitioner",
+      "url": "https://www.credly.com/badges/201260d3-12e0-4d22-a49f-4e64d68b348e",
+      "issuer": "AWS",
       "summary": "Deep dive on AWS services"
+    },
+    {
+      "name": "Optimizing MongoDB Performance with Tuning Tools",
+      "url": "https://www.credly.com/badges/e861b7b4-028a-47d4-aed6-7e586d4d95da",
+      "issuer": "MongoDB",
+      "summary": "Learned about diagnosing and tuning MongoDB performance using database tooling"
     },
     {
       "name": "Fundamentals of Operating Systems",
@@ -196,14 +202,7 @@
       "summary": "Learned about under the hood mechanisms of network protocols"
     },
     {
-      "name": "NodeJS Internals and Architecture",
-      "url": "https://www.udemy.com/certificate/UC-2068cbe0-b17c-47ca-b298-d8acb94b30e2/",
-      "issuer": "Udemy",
-      "summary": "Learned about internal architecture of node js, event loop, node js worker threads, enhancing node js app performance"
-    },
-    {
       "name": "Supervised Machine Learning: Regression and Classification",
-      "show": false,
       "url": "https://www.coursera.org/account/accomplishments/certificate/SZT92254XUUY",
       "issuer": "Coursera",
       "summary": "Learned about foundational fundamental of regression and classification machine learning algorithms"
@@ -275,15 +274,25 @@
         "Built grafana dashboard to observe the metrics"
       ]
     },
-        {
+    {
       "name": "postgrespector",
       "url": "https://github.com/zhalok/postgrespector",
-      "stack": ["Golang", "JavaScript"],
+      "stack": [
+        "Golang",
+        "Prometheus",
+        "Grafana",
+        "PostgreSQL",
+        "Loki",
+        "Promtail",
+        "Docker"
+      ],
       "show": true,
       "contributions": [
-        "Built prometheus exporter for heap usage, execution time",
-        "Built prometheus exporter for container metrics",
-        "Visualized metrics in grafana dashboard"
+        "Extracted postgres execution stats, container metrics as prometheus format",
+        "Built grafana dashboard for observing the prometheus metrics",
+        "Conducted load testing with pgbench",
+        "Installed pg_filedump for raw data file inspection",
+        "Demo: https://www.youtube.com/watch?v=w2OCn0X3bRw"
       ]
     },
     {
