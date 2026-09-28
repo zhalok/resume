@@ -16,7 +16,7 @@
     "summary": "Backend-focused software engineer with experience building AI-driven products, high-throughput distributed systems, and observability tooling across Golang, Node.js, and Python stacks. Skilled at diagnosing production incidents through metrics, logs, and traces, and at optimizing database and messaging pipelines (MongoDB, PostgreSQL, Redis, SQS, Kinesis, RabbitMQ) for reliability and scale. Author of published research in computer vision and NLP, and writes on system design and database internals.",
     "email": "rahmanzhalok@gmail.com",
     "phone": "01716922067",
-    "video_introduction": "https://www.loom.com/share/c5ab46a4737244edafd9f052555767a1",
+    "video_introduction": "https://bit.ly/4jpZSJo",
     "profiles": [
       {
         "network": "linkedin",
@@ -265,7 +265,6 @@
     {
       "name": "MongoDB vs PostgreSQL benchmarking for storing documents",
       "description": "Benchmark harness comparing MongoDB BSON and PostgreSQL JSONB for document storage under concurrent load, with container and database-internal metrics.",
-      "url": "https://github.com/zhalok/mongodb-bson-vs-postgres-jsonb-benchmarking",
       "stack": [
         "Golang",
         "JavaScript",
@@ -278,12 +277,11 @@
         "Promtail"
       ],
       "show": true,
-      "contributions": ["Benchmark results: https://bit.ly/4dbwS4h"]
+      "contributions": ["Benchmark results: https://bit.ly/4dbwS4h","Github: https://bit.ly/3TYSpGZ"]
     },
     {
       "name": "PostgreSPECTOR",
       "description": "Observability toolkit for PostgreSQL that exposes execution stats and container metrics to Prometheus and Grafana, with logs shipped via Loki.",
-      "url": "https://github.com/zhalok/PostgreSPECTOR.git",
       "stack": [
         "Golang",
         "Prometheus",
@@ -294,12 +292,11 @@
         "Docker"
       ],
       "show": true,
-      "contributions": ["Demo: https://youtu.be/w2OCn0X3bRw"]
+      "contributions": ["Demo: https://youtu.be/w2OCn0X3bRw", "Github: https://bit.ly/4y8AFXX"]
     },
     {
       "name": "Obstainer",
       "description": "Lightweight container observability tool that reads metrics straight from cgroups and exposes them to Prometheus and Grafana.",
-      "url": "https://github.com/zhalok/obstainer",
       "stack": [
         "Golang",
         "Grafana",
@@ -309,16 +306,16 @@
         "Promtail"
       ],
       "show": true,
-      "contributions": ["Demo: https://youtu.be/sifxPdFs2AE"]
+      "contributions": ["Demo: https://youtu.be/sifxPdFs2AE","Github: https://bit.ly/4y8AL1L"]
     },
     {
       "name": "Data Stores Python",
       "description": "Experiments comparing TCP server I/O models (thread-per-connection, non-blocking, event-driven) under load.",
-      "url": "https://github.com/zhalok/data-stores-python",
       "stack": ["Python", "Socket", "System Calls", "Docker"],
       "show": true,
       "contributions": [
-        "Benchmark results: https://bit.ly/3V6UUr9"
+        "Benchmark results: https://bit.ly/3V6UUr9",
+        "Github: https://bit.ly/4xMsr7q"
       ]
     },
     {
@@ -336,9 +333,8 @@
     {
       "name": "Go Http From Scratch System Calls",
       "description": "HTTP server implemented from raw sockets and system calls in Go, without the net/http package.",
-      "url": "https://github.com/zhalok/go-http-from-scratch-system-calls",
       "stack": ["Golang", "Syscalls", "OSSignals", "Sockets"],
-      "contributions": []
+      "contributions": ["Github: https://bit.ly/4z6JOBb"]
     },
     {
       "name": "AI Product Search",

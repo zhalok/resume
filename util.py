@@ -65,7 +65,7 @@ def get_section_renderers(data, latex):
                 latex.append(r"\textbf{%s}\\" % proj_name)
 
                 if proj_desc:
-                    latex.append(r"%s\\" % proj_desc)
+                    latex.append(r"%s" % proj_desc)
 
                 # Project URL if available
                 if proj_url:
