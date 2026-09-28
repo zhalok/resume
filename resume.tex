@@ -1,0 +1,134 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\geometry{margin=0.8in}
+\pagenumbering{gobble}
+\titleformat{\section}{\large\bfseries\color{blue!70!black}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{2pt}{2pt}
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=1.5em}
+\begin{document}
+
+\begin{center}
+\Large \textbf{Zhalok Rahman}\\[3pt]
+\normalsize Software Engineer 2 at Datatree Technology\\[2pt]
+\small rahmanzhalok@gmail.com \\phone 01716922067\\[2pt]
+\small LinkedIn: https://www.linkedin.com/in/zhalok-rahman/\\[2pt]
+\small Github: https://github.com/zhalok\\[2pt]
+\small Video Introduction: https://www.loom.com/share/c5ab46a4737244edafd9f052555767a1\\[2pt]
+\end{center}
+\section*{Skills}
+Golang, Python (FastAPI, Asyncio, Pytorch, Pandas), Node JS (Nest JS, Express JS, Koa), JavaScript/TypeScript (React JS, Next JS, PostgreSQL, MongoDB, Redis (Cache, Pub/Sub, Streams), RabbitMQ, WebSocket, SSE, Docker, AWS (ECS, CloudWatch, SQS, Kinesis, Lambda, OpenSearch, DynamoDB), Grafana, Prometheus, CI/CD (Github Actions, CodePipeline
+\vspace{2pt}
+\section*{Education}
+\textbf{Shahjalal University of Science and Technology}\\
+Bachelors of Science in Computer Science\\
+\textit{2019-01-01 -- 2024-04-01}\\
+\vspace{2pt}
+\section*{Experience}
+\textbf{Kinetik Healthcare} \hfill \textit{Software Engineer 2}\\
+\textit{2025-04-01 -- Present}
+\begin{itemize}
+\item Built \textbf{Florence} an \textbf{AI voice assistant} which handles around 80 percent of our ride initiation requests
+\item Developed internal \textbf{VoIP} testing tools for simulating calls for the voice agent
+\item Built a source control pipeline to manage \textbf{11Labs agent as code}
+\item Managed \textbf{CI/CD pipeline} for deploying agent
+\item Integrated Intercom based human agent call center with AI call center for transferring calls as fallback
+\item Built \textbf{Grafana dashboard} for monitoring the AI agent performance
+\item Contributed to \textbf{Langgraph} based orchestrator service for a large scale \textbf{AI Agent}
+\item Enhanced realtime notification pipeline with push based mechanism with \textbf{Redis Pub/Sub}, \textbf{CDC}, \textbf{Redis Streams}
+\item Migrated legacy code from \textbf{Express JS} to \textbf{Nest JS} for cleaner domain driven design
+\item Enhanced existing \textbf{RBAC} system with realtime access revocation
+\item Investigated production incidents based on logs and traces from \textbf{CloudWatch} and \textbf{Grafana}
+\item Optimized MongoDB query performance by \textbf{41 percent} using covered atlas search index scan
+\item Reduced network content download time by \textbf{66 percent} with default query projection
+\item Conducted AI-driven development using \textbf{Kiro}
+\end{itemize}
+\textbf{PropertyFinder} \hfill \textit{Software Engineer}\\
+\textit{2024-10-01 -- 2025-10-31}
+\begin{itemize}
+\item Ensured reliability and performance of \textbf{Golang} based B2B platform
+\item \textbf{Traced race conditions} between distributed services that was causing p1 incidents and confusing user experiences
+\item Investigated and fixed root cause of critical production incidents using metrics, logs, and traces from \textbf{Grafana}
+\item Conducted \textbf{Load Testing} and built dashboards to observe the performance of the entire system under high stress
+\item Written scripts for data fix to mitigate incidents
+\item Contributed to the modernization of B2B service, making architectural decisions and strategies for efficient migration
+\item Written unit tests to ensure \textbf{80 percent coverage}
+\item Designed asynchronous event-driven pipelines using \textbf{SQS} and \textbf{Kinesis Streams}
+\item Configured alerts in \textbf{Grafana} with \textbf{Slack} integration for real-time notification on any potential incident
+\item Used \textbf{Windsurf} for studying legacy codebases efficiently
+\end{itemize}
+\textbf{Learnyx AI} \hfill \textit{Fullstack Engineer}\\
+\textit{2023-10-01 -- 2025-02-01}
+\begin{itemize}
+\item Architected and built a scalable REST API with \textbf{NestJS}
+\item Designed an AI generation pipeline using \textbf{LangChain} for structured prompt management and multi-step chaining
+\item Integrated \textbf{Langfuse} for LLM observability, enabling cost tracking and performance tracing across model calls
+\item Decoupled heavy workloads from the main request cycle using asynchronous \textbf{RabbitMQ} consumers, improving resource efficiency
+\item Enhanced UX by implementing real-time streaming of AI-generated responses
+\item Optimized load performance using a hybrid lazy-loading and preloading strategy
+\item Acted as a technical advisor in stakeholder discussions, bridging engineering constraints with business goals
+\item Mentored a team of 3 engineers on system architecture patterns and backend best practices
+\item Managed self-hosted infrastructure on \textbf{AWS EC2} using \textbf{Coolify}, supporting \textbf{500+ active users}
+\item Integrated \textbf{Stripe} to handle recurring billing, subscription lifecycle, and payment management
+\end{itemize}
+\vspace{2pt}
+\section*{Projects}
+\textbf{MongoDB vs PostgreSQL benchmarking for storing documents}\\
+Benchmark harness comparing MongoDB BSON and PostgreSQL JSONB for document storage under concurrent load, with container and database-internal metrics.\\
+\textit{https://github.com/zhalok/mongodb-bson-vs-postgres-jsonb-benchmarking}
+\begin{itemize}
+\item Benchmark results: https://bit.ly/4dbwS4h
+\end{itemize}
+\small Tech: \small{Golang}, \small{JavaScript}, \small{Docker}, \small{PostgreSQL}, \small{MongoDB}, \small{Prometheus}, \small{Grafana}, \small{Loki}, \small{Promtail}\\
+\textbf{PostgreSPECTOR}\\
+Observability toolkit for PostgreSQL that exposes execution stats and container metrics to Prometheus and Grafana, with logs shipped via Loki.\\
+\textit{https://github.com/zhalok/PostgreSPECTOR.git}
+\begin{itemize}
+\item Demo: https://www.youtube.com/watch?v=w2OCn0X3bRw
+\end{itemize}
+\small Tech: \small{Golang}, \small{Prometheus}, \small{Grafana}, \small{PostgreSQL}, \small{Loki}, \small{Promtail}, \small{Docker}\\
+\textbf{Obstainer}\\
+Lightweight container observability tool that reads metrics straight from cgroups and exposes them to Prometheus and Grafana.\\
+\textit{https://github.com/zhalok/obstainer}
+\begin{itemize}
+\item Demo: https://lnkd.in/p/gw6QYyMr
+\end{itemize}
+\small Tech: \small{Golang}, \small{Grafana}, \small{Prometheus}, \small{Docker}, \small{Loki}, \small{Promtail}\\
+\textbf{Data Stores Python}\\
+Experiments comparing TCP server I/O models (thread-per-connection, non-blocking, event-driven) under load.\\
+\textit{https://github.com/zhalok/data-stores-python}
+\begin{itemize}
+\item Benchmark results: https://bit.ly/3V6UUr9
+\end{itemize}
+\small Tech: \small{Python}, \small{Socket}, \small{System Calls}, \small{Docker}\\
+\textbf{Go Http From Scratch System Calls}\\
+HTTP server implemented from raw sockets and system calls in Go, without the net/http package.\\
+\textit{https://github.com/zhalok/go-http-from-scratch-system-calls}
+\small Tech: \small{Golang}, \small{Syscalls}, \small{OSSignals}, \small{Sockets}\\
+\vspace{2pt}
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner}\\
+\small AWS\\
+\small https://www.credly.com/badges/201260d3-12e0-4d22-a49f-4e64d68b348e\\
+\textit{Deep dive on AWS services}\\
+\textbf{Optimizing MongoDB Performance with Tuning Tools}\\
+\small MongoDB\\
+\small https://www.credly.com/badges/e861b7b4-028a-47d4-aed6-7e586d4d95da\\
+\textit{Learned about diagnosing and tuning MongoDB performance using database tooling}\\
+\textbf{Fundamentals of Operating Systems}\\
+\small Udemy\\
+\small https://www.udemy.com/certificate/UC-ff0d44a3-8917-40cd-aef9-a01e258aee49/\\
+\textit{Learned about Process structure, Memory managment, CPU cycles, I/O management}\\
+\textbf{Fundamentals of Network Engineering}\\
+\small Udemy\\
+\small https://www.udemy.com/certificate/UC-0a49d23e-036a-4c80-ad5a-410ccb877ebb/\\
+\textit{Learned about under the hood mechanisms of network protocols}\\
+\textbf{Fundamentals of Database Engineering}\\
+\small Udemy\\
+\small https://www.udemy.com/certificate/UC-afe8cbda-1420-4cca-a833-aed013e7a6e2/\\
+\textit{Learned about ACID, Data organization, Indexing, Partitioning, Sharding, Concurrency control, Replication, Sharding, Paritioning etc}\\
+\vspace{2pt}
+\end{document}

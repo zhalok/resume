@@ -172,7 +172,7 @@ const projectsHtml = fieldsToShow.has('projects')
         (proj) => `    <div class="project-item">
       <h3><a href="${esc(proj.url)}" target="_blank" rel="noopener">${esc(proj.name)}</a></h3>
       <div class="stack">${(proj.stack || []).map((s) => esc(s)).join(' · ')}</div>
-      <ul>
+${proj.description ? `      <p class="desc">${esc(proj.description)}</p>\n` : ''}      <ul>
 ${(proj.contributions || [])
   .map((c) => {
     const demoMatch = c.match(/^demo:\s*(\S+)/i);
@@ -412,6 +412,7 @@ const html = `<!DOCTYPE html>
   .blog-item p { margin: 8px 0 0; font-size: 0.9rem; color: var(--text-dim); }
   .pub-item ul, .project-item ul { margin: 12px 0 0; padding-left: 20px; }
   .pub-item li, .project-item li { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 6px; }
+  .project-item .desc { margin: 8px 0 0; font-size: 0.9rem; color: var(--text-dim); }
   .project-item .stack { font-family: var(--mono); font-size: 0.8rem; color: var(--accent); margin-top: 4px; }
 
   .cert-item h3 { margin: 0 0 4px; font-size: 1rem; }

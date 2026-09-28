@@ -51,20 +51,21 @@ def get_section_renderers(data, latex):
     def render_projects():
         projects = data.get("projects", [])
         if projects:
-            latex.append(r"\section*{Pet Projects}")
+            latex.append(r"\section*{Projects}")
             for proj in projects:
                 if "show" in proj and proj["show"] == False:
                     continue
                 proj_name = proj.get("name", "")
                 proj_url = proj.get("url", "")
                 proj_stack = proj.get("stack","")
+                proj_desc = proj.get("description", "")
                 proj_contributions = proj.get("contributions","")
 
                 # Project name
                 latex.append(r"\textbf{%s}\\" % proj_name)
 
-                # if proj_desc:
-                #     latex.append(r"\textit{%s}\\" % proj_desc)
+                if proj_desc:
+                    latex.append(r"%s\\" % proj_desc)
 
                 # Project URL if available
                 if proj_url:
