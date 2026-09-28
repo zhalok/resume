@@ -180,6 +180,7 @@
     },
     {
       "name": "Optimizing MongoDB Performance with Tuning Tools",
+      "show":false,
       "url": "https://www.credly.com/badges/e861b7b4-028a-47d4-aed6-7e586d4d95da",
       "issuer": "MongoDB",
       "summary": "Learned about diagnosing and tuning MongoDB performance using database tooling"
