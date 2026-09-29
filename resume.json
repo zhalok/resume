@@ -190,69 +190,27 @@
       "summary": "Supervised learning from scratch, learning about mathematical algorithms working as backbone of machine learning models"
     }
   ],
-  "projects": [
+   "projects": [
     {
       "name": "MongoDB vs PostgreSQL benchmarking for storing documents",
-      "url": "https://github.com/zhalok/mongodb-bson-vs-postgres-jsonb-benchmarking",
-      "stack": ["Golang", "JavaScript"],
-      "show": false,
-      "contributions": [
-        "Ran MongoDB and PostgreSQL in docker",
-        "Built server side applications for connecting with MongoDB and PostgreSQL",
-        "Built prometheus scraper for extracting container metrics from cgroup",
-        "Built prometheus scraper for extracting database internal metrics and footprints",
-        "Writen load testing client in golang to simulate concurrent requests with Goroutines",
-        "Built grafana dashboard to observe the metrics"
-      ]
-    },
-    {
-      "name": "Data Stores **Python**",
-      "url": "https://github.com/zhalok/data-stores-python",
-      "stack": ["**Python**", "Socket", "System Calls"],
-      "show": false,
-      "contributions": [
-        "Built TCP servers with stream sockets in multi-threaded one thread per connection i/o, single-thread non-blocking i/o and single-threaded non-blocking event-driven i/o",
-        "Conducted stress testing with high load concurrency simulation with goroutines",
-        "Observed resource usages of containers via cAdvisor",
-        "Scraped metrics from cAdvisor using prometheus and showed them in Grafana",
-        "Demo: https://bit.ly/3UFJfPx"
-      ]
-    },
-    {
-      "name": "Remote Browser Control",
-      "url": "https://github.com/zhalok/remote-browser-control",
-      "stack": ["Playwright", "**Python**", "FastAPI", "WebSocket"],
-      "contributions": [
-        "Built FastAPI app for receiving commands for playwright to apply on browser session via websocket and emit current snapshot of the browser",
-        "Created a front end app with react to render the remote browser session and also send commands via websocket",
-        "Demo: https://bit.ly/4wDD7om"
-      ]
-    },
-    {
-      "name": "Invoice Extractor",
-      "url": "https://github.com/zhalok/invoice-extractor.git",
-      "stack": ["**Python**"],
+      "description": "Benchmark harness comparing MongoDB BSON and PostgreSQL JSONB for document storage under concurrent load, with container and database-internal metrics.",
+      "stack": [
+        "Golang",
+        "JavaScript",
+        "Docker",
+        "PostgreSQL",
+        "MongoDB",
+        "Prometheus",
+        "Grafana",
+        "Loki",
+        "Promtail"
+      ],
       "show": true,
-      "contributions": [
-        "Automated reading of supplier invoices and verifying the extracted data before registering into a (mock) accounting system",
-        "Added a human review step between extraction and registration to avoid blind automation, since it nearly caused a duplicate payment per the client's brief",
-        "Demo: https://youtu.be/BsikeXZiBuI"
-      ]
-    },
-    {
-      "name": "AI Product Search",
-      "url": "https://github.com/zhalok/ai-product-search",
-      "stack": ["FastAPI", "VectorDB (Qdrant)", "RabbitMQ", "SBERT"],
-      "show": false,
-      "contributions": [
-        "Built async vector indexing pipeline from csv file with RabbitMQ and Qdrant",
-        "Built inferencing and searching pipeline with FastAPI",
-        "Used finetuned self hosted SBERT model for generating embedding"
-      ]
+      "contributions": ["Benchmark results: https://bit.ly/4dbwS4h","Github: https://bit.ly/3TYSpGZ"]
     },
     {
       "name": "PostgreSPECTOR",
-      "url": "https://github.com/zhalok/PostgreSPECTOR.git",
+      "description": "Observability toolkit for PostgreSQL that exposes execution stats and container metrics to Prometheus and Grafana, with logs shipped via Loki.",
       "stack": [
         "Golang",
         "Prometheus",
@@ -262,23 +220,90 @@
         "Promtail",
         "Docker"
       ],
-      "show": false,
-      "contributions": [
-        "Extracted postgres execution stats, container metrics as prometheus format",
-        "Built grafana dashboard for observing the prometheus metrics",
-        "Conducted load testing with pgbench",
-        "Installed pg_filedump for raw data file inspection",
-        "Demo: https://www.youtube.com/watch?v=w2OCn0X3bRw"
-      ]
+      "show": true,
+      "contributions": ["Demo: https://youtu.be/w2OCn0X3bRw", "Github: https://bit.ly/4y8AFXX"]
     },
     {
       "name": "Obstainer",
-      "url": "https://github.com/zhalok/obstainer",
-      "stack": ["Golang", "Docker"],
+      "description": "Lightweight container observability tool that reads metrics straight from cgroups and exposes them to Prometheus and Grafana.",
+      "stack": [
+        "Golang",
+        "Grafana",
+        "Prometheus",
+        "Docker",
+        "Loki",
+        "Promtail"
+      ],
+      "show": true,
+      "contributions": ["Demo: https://youtu.be/sifxPdFs2AE","Github: https://bit.ly/4y8AL1L"]
+    },
+    {
+      "name": "Data Stores Python",
+      "description": "Experiments comparing TCP server I/O models (thread-per-connection, non-blocking, event-driven) under load.",
+      "stack": ["Python", "Socket", "System Calls", "Docker"],
       "show": true,
       "contributions": [
-        "Built prometheus scraper for extracting container metrics from cgroup",
-        "Visualized container metrics in grafana dashboard"
+        "Benchmark results: https://bit.ly/3V6UUr9",
+        "Github: https://bit.ly/4xMsr7q"
+      ]
+    },
+    {
+      "name": "Remote Browser Control",
+      "description": "Remote-controlled Playwright browser session streamed to a React client over WebSocket.",
+      "stack": ["Playwright", "Python", "FastAPI", "WebSocket"],
+      "show": true,
+      "contributions": [
+        "Built FastAPI app for receiving commands for playwright to apply on browser session via websocket and emit current snapshot of the browser",
+        "Created a front end app with react to render the remote browser session and also send commands via websocket",
+        "Demo: https://bit.ly/4wDD7om",
+        "Github: https://github.com/zhalok/remote-browser-control"
+      ]
+    },
+    {
+      "name": "Go Http From Scratch System Calls",
+      "show":false,
+      "description": "HTTP server implemented from raw sockets and system calls in Go, without the net/http package.",
+      "stack": ["Golang", "Syscalls", "OSSignals", "Sockets"],
+      "contributions": ["Github: https://bit.ly/4z6JOBb"]
+    },
+    {
+      "name": "AI Product Search",
+      "description": "Semantic product search over CSV catalogs using SBERT embeddings, Qdrant and an async RabbitMQ indexing pipeline.",
+      "url": "https://github.com/zhalok/ai-product-search",
+      "stack": ["FastAPI", "VectorDB (Qdrant)", "RabbitMQ", "SBERT"],
+      "show": false,
+      "contributions": [
+        "Built async vector indexing pipeline from csv file with RabbitMQ and Qdrant",
+        "Built inferencing and searching pipeline with FastAPI",
+        "Used finetuned self hosted SBERT model for generating embedding",
+        "Github: "
+      ]
+    },
+    {
+      "name": "Integration Gateway",
+      "description": "Go API that aggregates data from three sources through a channel-based async pipeline with retries.",
+      "url": "https://github.com/zhalok/integration-gateway",
+      "stack": ["Golang"],
+      "show": false,
+      "contributions": [
+        "Built a simple API endpoint that aggregates data from 3 different sources",
+        "Implemented channel based async data aggregation pipeline with retry mechanism"
+      ]
+    },
+    {
+      "name": "Invoice Extractor",
+      "url": "https://github.com/zhalok/invoice-extractor.git",
+      "description":"Automated reading of supplier invoices and verifying the extracted data before registering into a (mock) accounting system",
+      "stack": ["**Python**","FastAPI","RabbitMQ"],
+      "show": true,
+      "contributions": [
+        "Built a FastAPI upload/job-polling API and a **Python** RabbitMQ worker pool running an extract, hydrate, verify, and register pipeline",
+        "Designed dual auto-submit and manual-review flows: verified invoices auto-register immediately, while unresolved supplier, duplicate, or math-mismatch cases fall back to a human review UI before submission",
+        "Persisted job and extraction state in Postgres so the UI can poll job status and list every processed job",
+        "Abstracted LLM/OCR extraction behind swappable clients (worker/llm_client.py, worker/ocr_client.py) to decouple the pipeline from the extraction backend",
+        "Containerized the full stack (API, worker, Postgres, RabbitMQ, mock accounting API) with Docker Compose and added a GitHub Actions CI workflow to build and boot the stack on every push/PR",
+        "Github: https://github.com/zhalok/invoice-extractor.git",
+        "Demo: https://youtu.be/BsikeXZiBuI"
       ]
     }
   ]
