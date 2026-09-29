@@ -1,7 +1,7 @@
 {
   "fields_to_show": [
-    "work",
     "skills",
+    "work",
     "projects",
     "publications",
     "certificates",
@@ -25,6 +25,50 @@
       }
     ]
   },
+  "skills": [
+    {
+      "name": "Golang"
+    },
+    {
+      "name": "Python (FastAPI, Asyncio, Pytorch, Pandas)"
+    },
+    {
+      "name": "Node JS (Nest JS, Express JS, Koa)"
+    },
+    {
+      "name": "JavaScript/TypeScript (React JS, Next JS"
+    },
+    {
+      "name": "PostgreSQL"
+    },
+    {
+      "name": "MongoDB"
+    },
+    {
+      "name": "Redis (Cache, Pub/Sub, Streams)"
+    },
+    {
+      "name": "RabbitMQ"
+    },
+    {
+      "name": "WebSocket, SSE"
+    },
+    {
+      "name": "Docker"
+    },
+    {
+      "name": "AWS (ECS, CloudWatch, SQS, Kinesis, Lambda, OpenSearch, DynamoDB)"
+    },
+    {
+      "name": "Grafana"
+    },
+    {
+      "name": "Prometheus"
+    },
+    {
+      "name": "CI/CD (Github Actions, CodePipeline"
+    }
+  ],
   "work": [
     {
       "name": "Kinetik Healthcare",
@@ -116,7 +160,7 @@
     },
     {
       "name": "Detecting Communal Violence in Texts",
-      "show":false,
+      "show": false,
       "publisher": "Association for Computational Linguistics",
       "releaseDate": "May 2024",
       "url": "https://aclanthology.org/2023.banglalp-1.25/",
@@ -190,7 +234,7 @@
       "summary": "Supervised learning from scratch, learning about mathematical algorithms working as backbone of machine learning models"
     }
   ],
-   "projects": [
+  "projects": [
     {
       "name": "MongoDB vs PostgreSQL benchmarking for storing documents",
       "description": "Benchmark harness comparing MongoDB BSON and PostgreSQL JSONB for document storage under concurrent load, with container and database-internal metrics.",
@@ -206,7 +250,10 @@
         "Promtail"
       ],
       "show": false,
-      "contributions": ["Benchmark results: https://bit.ly/4dbwS4h","Github: https://bit.ly/3TYSpGZ"]
+      "contributions": [
+        "Benchmark results: https://bit.ly/4dbwS4h",
+        "Github: https://bit.ly/3TYSpGZ"
+      ]
     },
 
     {
@@ -221,7 +268,10 @@
         "Promtail"
       ],
       "show": false,
-      "contributions": ["Demo: https://youtu.be/sifxPdFs2AE","Github: https://bit.ly/4y8AL1L"]
+      "contributions": [
+        "Demo: https://youtu.be/sifxPdFs2AE",
+        "Github: https://bit.ly/4y8AL1L"
+      ]
     },
     {
       "name": "Data Stores Python",
@@ -247,7 +297,7 @@
     },
     {
       "name": "Go Http From Scratch System Calls",
-      "show":false,
+      "show": false,
       "description": "HTTP server implemented from raw sockets and system calls in Go, without the net/http package.",
       "stack": ["Golang", "Syscalls", "OSSignals", "Sockets"],
       "contributions": ["Github: https://bit.ly/4z6JOBb"]
@@ -279,8 +329,8 @@
     {
       "name": "Invoice Extractor",
       "url": "https://github.com/zhalok/invoice-extractor.git",
-      "description":"Automated reading of supplier invoices and verifying the extracted data before registering into a (mock) accounting system",
-      "stack": ["**Python**","FastAPI","RabbitMQ"],
+      "description": "Automated reading of supplier invoices and verifying the extracted data before registering into a (mock) accounting system",
+      "stack": ["**Python**", "FastAPI", "RabbitMQ"],
       "show": true,
       "contributions": [
         "Built a FastAPI upload/job-polling API and a **Python** RabbitMQ worker pool running an extract, hydrate, verify, and register pipeline",
@@ -289,7 +339,7 @@
         "Demo: https://youtu.be/BsikeXZiBuI"
       ]
     },
-        {
+    {
       "name": "PostgreSPECTOR",
       "description": "Observability toolkit for PostgreSQL that exposes execution stats and container metrics to Prometheus and Grafana, with logs shipped via Loki.",
       "stack": [
@@ -301,8 +351,11 @@
         "Promtail",
         "Docker"
       ],
-      "show": true,
-      "contributions": ["Demo: https://youtu.be/w2OCn0X3bRw", "Github: https://bit.ly/4y8AFXX"]
+      "show": false,
+      "contributions": [
+        "Demo: https://youtu.be/w2OCn0X3bRw",
+        "Github: https://bit.ly/4y8AFXX"
+      ]
     }
   ]
 }
