@@ -71,31 +71,8 @@
 \end{itemize}
 \vspace{2pt}
 \section*{Projects}
-\textbf{MongoDB vs PostgreSQL benchmarking for storing documents}\\
-\begin{itemize}
-\item Benchmark results: https://bit.ly/4dbwS4h
-\item Github: https://bit.ly/3TYSpGZ
-\end{itemize}
-\small Tech: \small{Golang}, \small{JavaScript}, \small{Docker}, \small{PostgreSQL}, \small{MongoDB}, \small{Prometheus}, \small{Grafana}, \small{Loki}, \small{Promtail}\\
-\textbf{PostgreSPECTOR}\\
-\begin{itemize}
-\item Demo: https://youtu.be/w2OCn0X3bRw
-\item Github: https://bit.ly/4y8AFXX
-\end{itemize}
-\small Tech: \small{Golang}, \small{Prometheus}, \small{Grafana}, \small{PostgreSQL}, \small{Loki}, \small{Promtail}, \small{Docker}\\
-\textbf{Obstainer}\\
-\begin{itemize}
-\item Demo: https://youtu.be/sifxPdFs2AE
-\item Github: https://bit.ly/4y8AL1L
-\end{itemize}
-\small Tech: \small{Golang}, \small{Grafana}, \small{Prometheus}, \small{Docker}, \small{Loki}, \small{Promtail}\\
-\textbf{Data Stores Python}\\
-\begin{itemize}
-\item Benchmark results: https://bit.ly/3V6UUr9
-\item Github: https://bit.ly/4xMsr7q
-\end{itemize}
-\small Tech: \small{Python}, \small{Socket}, \small{System Calls}, \small{Docker}\\
 \textbf{Remote Browser Control}\\
+\textit{Remote-controlled Playwright browser session streamed to a React client over WebSocket.}
 \begin{itemize}
 \item Built FastAPI app for receiving commands for playwright to apply on browser session via websocket and emit current snapshot of the browser
 \item Created a front end app with react to render the remote browser session and also send commands via websocket
@@ -104,17 +81,22 @@
 \end{itemize}
 \small Tech: \small{Playwright}, \small{Python}, \small{FastAPI}, \small{WebSocket}\\
 \textbf{Invoice Extractor}\\
+\textit{Automated reading of supplier invoices and verifying the extracted data before registering into a (mock) accounting system}
 \textit{https://github.com/zhalok/invoice-extractor.git}
 \begin{itemize}
 \item Built a FastAPI upload/job-polling API and a \textbf{Python} RabbitMQ worker pool running an extract, hydrate, verify, and register pipeline
 \item Designed dual auto-submit and manual-review flows: verified invoices auto-register immediately, while unresolved supplier, duplicate, or math-mismatch cases fall back to a human review UI before submission
-\item Persisted job and extraction state in Postgres so the UI can poll job status and list every processed job
-\item Abstracted LLM/OCR extraction behind swappable clients (worker/llm\_client.py, worker/ocr\_client.py) to decouple the pipeline from the extraction backend
-\item Containerized the full stack (API, worker, Postgres, RabbitMQ, mock accounting API) with Docker Compose and added a GitHub Actions CI workflow to build and boot the stack on every push/PR
 \item Github: https://github.com/zhalok/invoice-extractor.git
 \item Demo: https://youtu.be/BsikeXZiBuI
 \end{itemize}
 \small Tech: \small{**Python**}, \small{FastAPI}, \small{RabbitMQ}\\
+\textbf{PostgreSPECTOR}\\
+\textit{Observability toolkit for PostgreSQL that exposes execution stats and container metrics to Prometheus and Grafana, with logs shipped via Loki.}
+\begin{itemize}
+\item Demo: https://youtu.be/w2OCn0X3bRw
+\item Github: https://bit.ly/4y8AFXX
+\end{itemize}
+\small Tech: \small{Golang}, \small{Prometheus}, \small{Grafana}, \small{PostgreSQL}, \small{Loki}, \small{Promtail}, \small{Docker}\\
 \vspace{2pt}
 \section*{Publications}
 \textbf{Optical Mark Recognition with Object Detection and Clustering}\\

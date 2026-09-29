@@ -65,14 +65,15 @@ def get_section_renderers(data, latex):
                     continue
                 proj_name = proj.get("name", "")
                 proj_url = proj.get("url", "")
+                proj_desc = proj.get("description", "")
                 proj_stack = proj.get("stack","")
                 proj_contributions = proj.get("contributions","")
 
                 # Project name
                 latex.append(r"\textbf{%s}\\" % proj_name)
 
-                # if proj_desc:
-                #     latex.append(r"\textit{%s}\\" % proj_desc)
+                if proj_desc:
+                    latex.append(r"\textit{%s}" % escape_latex(proj_desc))
 
                 # Project URL if available
                 if proj_url:
