@@ -1,0 +1,130 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\geometry{margin=0.8in}
+\pagenumbering{gobble}
+\titleformat{\section}{\large\bfseries\color{blue!70!black}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{2pt}{2pt}
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=1.5em}
+\begin{document}
+
+\begin{center}
+\Large \textbf{Zhalok Rahman}\\[3pt]
+\normalsize Software Engineer 2 at Datatree Technology\\[2pt]
+\small rahmanzhalok@gmail.com \\phone 01716922067\\[2pt]
+\small LinkedIn: https://www.linkedin.com/in/zhalok-rahman/\\[2pt]
+\small Github: https://github.com/zhalok\\[2pt]
+\small Video Introduction: https://www.loom.com/share/c5ab46a4737244edafd9f052555767a1\\[2pt]
+\end{center}
+\section*{Experience}
+\textbf{Kinetik Healthcare} \hfill \textit{Software Engineer 2}\\
+\textit{2025-04-01 -- Present}
+\begin{itemize}
+\item Implemented push based realtime system using Redis PubSub
+\item Generated notifications and pushed in Redis Streams via MongoDB CDC realm trigger
+\item Implemented RBAC validation and realtime access revoke on role change
+\item Built endpoints for AI agent tool calls
+\item Built AI call center agent with ElevenLabs
+\item Integrated human call center as fallback for AI callcenter service
+\item Managed ElevenLabs AI agent as code with \textbf{Python} SDK, building a CI/CD deploy pipeline that fetches the agent config from the development agent, replicates it into staging/production with injected environment config, and avoids shipping UI-edited agents directly for better auditability
+\item Built a \textbf{Python} voice service (ai-service) with HTTP and WebSocket endpoints: Twilio hits the HTTP endpoint to start a session, receives TwiML pointing to the WebSocket endpoint with the session id, then streams voice over that WebSocket connection
+\item Streamed incoming voice audio from the WebSocket connection to the LLM orchestration service over gRPC streams
+\item Integrated Langfuse for tracing and monitoring the voice AI agent pipeline
+\item Managed infrastructure in AWS ECS
+\item Debugged build and deployment issues
+\end{itemize}
+\textbf{PropertyFinder} \hfill \textit{Software Engineer}\\
+\textit{2024-10-01 -- 2026-03-31}
+\begin{itemize}
+\item Worked on B2B modernization with Golang and AWS based services like DynamoDB, Lambda, SQS, ECS
+\item Performed load testing experiment with go script and created a dashboard with necessary metrics to observe the changes in high load
+\item Implemented asynchronous business logics with SQS, Lambda (go) and Kinesis streams
+\item Fixed and investigated production incidents
+\item Collaborated with data engineering team for fixing data discrepancy issues during migration
+\item Written go scripts for resolving incident and migration of data
+\item Contributed to data migration using \textbf{Python} and Apache Spark scripts
+\item Fixed github actions deployment failures
+\end{itemize}
+\textbf{Learnyx AI} \hfill \textit{Fullstack Engineer}\\
+\textit{2023-10-01 -- 2025-02-01}
+\begin{itemize}
+\item Built an ai-service entirely in \textbf{Python}, consuming RabbitMQ as the entrypoint invocation for heavy AI workloads like vector search and LLM orchestration
+\item Built AI generation service with Langchain, FastAPI and OpenAI models
+\item Built websocket and server sent events endpoints for realtime AI generation delivery
+\item Created RabbitMQ consumers for handling heavy workloads asyncly with PikaClient
+\item Offloaded event loop blocking sync tasks into background tasks
+\item Scheduled gathered coroutines for concurrent resolutions
+\item Traced event loop blocking issues with sync operations and optimized the response time
+\end{itemize}
+\textbf{Innovext IT} \hfill \textit{Fullstack Developer}\\
+\textit{2022-12-01 -- 2023-10-01}
+\begin{itemize}
+\item Built REST apis with Nest JS, Express JS and FastAPI (for deploying  fine-tuned model)
+\item Implemented payment and monetary transaction features by integrating third party payment gateways (stripe and paypal)
+\item Built client side application with Next JS, used Redux for efficient data fetching and dataflow
+\item Built an internal monetization system with credits, ensured smooth credit transfer with mongodb sessions
+\item Built server with FastAPI for inferencing fine-tuned object detection model in onnx format
+\item Created scripts for data preprocessing and training models
+\end{itemize}
+\vspace{2pt}
+\section*{Projects}
+\textbf{Remote Browser Control}\\
+\textit{https://github.com/zhalok/remote-browser-control}
+\begin{itemize}
+\item Built FastAPI app for receiving commands for playwright to apply on browser session via websocket and emit current snapshot of the browser
+\item Created a front end app with react to render the remote browser session and also send commands via websocket
+\item Demo: https://bit.ly/4wDD7om
+\end{itemize}
+\small Tech: \small{Playwright}, \small{**Python**}, \small{FastAPI}, \small{WebSocket}\\
+\textbf{Invoice Extractor}\\
+\textit{https://github.com/zhalok/invoice-extractor.git}
+\begin{itemize}
+\item Automated reading of supplier invoices and verifying the extracted data before registering into a (mock) accounting system
+\item Added a human review step between extraction and registration to avoid blind automation, since it nearly caused a duplicate payment per the client's brief
+\item Demo: https://youtu.be/BsikeXZiBuI
+\end{itemize}
+\small Tech: \small{**Python**}\\
+\textbf{Obstainer}\\
+\textit{https://github.com/zhalok/obstainer}
+\begin{itemize}
+\item Built prometheus scraper for extracting container metrics from cgroup
+\item Visualized container metrics in grafana dashboard
+\end{itemize}
+\small Tech: \small{Golang}, \small{Docker}\\
+\vspace{2pt}
+\section*{Publications}
+\textbf{Optical Mark Recognition with Object Detection and Clustering}\\
+\small 2024 6th International Conference on Electrical Engineering and Information and Communication Technology (ICEEICT)
+\hfill \textit{May 2024}\\
+\small \url{https://doi.org/10.1109/ICEEICT62016.2024.10534561}\\
+\begin{itemize}
+\item Written \textbf{Python} scripts for generating synthetic training data
+\item Built training scripts in \textbf{Python} with ultralytics for training lightweight YOLO models
+\item Implemented clustering based unsupervised algorithm for column detection and serialization of answers
+\item Exported finetuned model in Onnx format for inferencing via API
+\item demo: https://www.youtube.com/watch?v=BiEybE5qQqw
+\end{itemize}
+\vspace{2pt}
+\section*{Certifications}
+\textbf{AWS Certified Cloud Practitioner}\\
+\small AWS\\
+\small https://www.credly.com/badges/201260d3-12e0-4d22-a49f-4e64d68b348e\\
+\textit{Deep dive on AWS services}\\
+\textbf{Optimizing MongoDB Performance with Tuning Tools}\\
+\small MongoDB\\
+\small https://www.credly.com/badges/e861b7b4-028a-47d4-aed6-7e586d4d95da\\
+\textit{Learned about diagnosing and tuning MongoDB performance using database tooling}\\
+\textbf{Supervised Machine Learning: Regression and Classification}\\
+\small Coursera\\
+\small https://coursera.org/share/0ef4defbf44ee7d868c52c7e1a3bb94f\\
+\textit{Supervised learning from scratch, learning about mathematical algorithms working as backbone of machine learning models}\\
+\vspace{2pt}
+\section*{Education}
+\textbf{Shahjalal University of Science and Technology}\\
+Bachelors of Science in Computer Science\\
+\textit{2019-01-01 -- 2024-04-01}\\
+\vspace{2pt}
+\end{document}

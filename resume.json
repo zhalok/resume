@@ -1,11 +1,18 @@
 {
-  "fields_to_show": ["work", "skills", "projects", "publications", "certificates", "education"],
+  "fields_to_show": [
+    "work",
+    "skills",
+    "projects",
+    "publications",
+    "certificates",
+    "education"
+  ],
   "basics": {
     "name": "Zhalok Rahman",
     "label": "Software Engineer 2 at Datatree Technology",
-    "summary": "Backend-focused software engineer with experience building AI-driven products, high-throughput distributed systems, and observability tooling across Golang, Node.js, and Python stacks. Skilled at diagnosing production incidents through metrics, logs, and traces, and at optimizing database and messaging pipelines (MongoDB, PostgreSQL, Redis, SQS, Kinesis, RabbitMQ) for reliability and scale. Author of published research in computer vision and NLP, and writes on system design and database internals.",
+    "summary": "Backend-focused software engineer with experience building AI-driven products, high-throughput distributed systems, and observability tooling across Golang, Node.js, and **Python** stacks. Skilled at diagnosing production incidents through metrics, logs, and traces, and at optimizing database and messaging pipelines (MongoDB, PostgreSQL, Redis, SQS, Kinesis, RabbitMQ) for reliability and scale. Author of published research in computer vision and NLP, and writes on system design and database internals.",
     "email": "rahmanzhalok@gmail.com",
-    "phone": "01716922067",
+    "phone": "+8801716922067",
     "video_introduction": "https://www.loom.com/share/c5ab46a4737244edafd9f052555767a1",
     "profiles": [
       {
@@ -24,15 +31,16 @@
       "position": "Software Engineer 2",
       "startDate": "2025-04-01",
       "highlights": [
-        "Enhanced existing lambda based services writen in Node JS",
-        "Migrated legacy Node JS service into Modern NestJS framework",
         "Implemented push based realtime system using Redis PubSub",
         "Generated notifications and pushed in Redis Streams via MongoDB CDC realm trigger",
         "Implemented RBAC validation and realtime access revoke on role change",
         "Built endpoints for AI agent tool calls",
         "Built AI call center agent with ElevenLabs",
         "Integrated human call center as fallback for AI callcenter service",
-        "Built python scripts with Elevenlabs SDK to manage and deploy agent on CI/CD trigger",
+        "Managed ElevenLabs AI agent as code with **Python** SDK, building a CI/CD deploy pipeline that fetches the agent config from the development agent, replicates it into staging/production with injected environment config, and avoids shipping UI-edited agents directly for better auditability",
+        "Built a **Python** voice service (ai-service) with HTTP and WebSocket endpoints: Twilio hits the HTTP endpoint to start a session, receives TwiML pointing to the WebSocket endpoint with the session id, then streams voice over that WebSocket connection",
+        "Streamed incoming voice audio from the WebSocket connection to the LLM orchestration service over gRPC streams",
+        "Integrated Langfuse for tracing and monitoring the voice AI agent pipeline",
         "Managed infrastructure in AWS ECS",
         "Debugged build and deployment issues"
       ]
@@ -49,6 +57,7 @@
         "Fixed and investigated production incidents",
         "Collaborated with data engineering team for fixing data discrepancy issues during migration",
         "Written go scripts for resolving incident and migration of data",
+        "Contributed to data migration using **Python** and Apache Spark scripts",
         "Fixed github actions deployment failures"
       ]
     },
@@ -58,6 +67,7 @@
       "startDate": "2023-10-01",
       "endDate": "2025-02-01",
       "highlights": [
+        "Built an ai-service entirely in **Python**, consuming RabbitMQ as the entrypoint invocation for heavy AI workloads like vector search and LLM orchestration",
         "Built AI generation service with Langchain, FastAPI and OpenAI models",
         "Built websocket and server sent events endpoints for realtime AI generation delivery",
         "Created RabbitMQ consumers for handling heavy workloads asyncly with PikaClient",
@@ -97,8 +107,8 @@
       "releaseDate": "May 2024",
       "url": "https://doi.org/10.1109/ICEEICT62016.2024.10534561",
       "contributions": [
-        "Written scripts for generating synthetic training data",
-        "Built training scripts with ultralytics for training lightweight YOLO models",
+        "Written **Python** scripts for generating synthetic training data",
+        "Built training scripts in **Python** with ultralytics for training lightweight YOLO models",
         "Implemented clustering based unsupervised algorithm for column detection and serialization of answers",
         "Exported finetuned model in Onnx format for inferencing via API",
         "demo: https://www.youtube.com/watch?v=BiEybE5qQqw"
@@ -106,13 +116,14 @@
     },
     {
       "name": "Detecting Communal Violence in Texts",
+      "show":false,
       "publisher": "Association for Computational Linguistics",
       "releaseDate": "May 2024",
       "url": "https://aclanthology.org/2023.banglalp-1.25/",
       "contributions": [
         "Curated and annotated a large-scale dataset of violence-related texts aggregated from multiple heterogeneous sources",
-        "Benchmarked multiple pretrained BERT variants to identify the optimal backbone for communal violence detection",
-        "Applied domain-adaptive pretraining and fine-tuning to boost classification accuracy on low-resource Bangla text"
+        "Benchmarked multiple pretrained BERT variants in **Python** to identify the optimal backbone for communal violence detection",
+        "Applied domain-adaptive pretraining and fine-tuning in **Python** to boost classification accuracy on low-resource Bangla text"
       ]
     }
   ],
@@ -153,27 +164,30 @@
     },
     {
       "name": "Fundamentals of Operating Systems",
+      "show": false,
       "url": "https://www.udemy.com/certificate/UC-ff0d44a3-8917-40cd-aef9-a01e258aee49/",
       "issuer": "Udemy",
       "summary": "Learned about Process structure, Memory managment, CPU cycles, I/O management"
     },
     {
       "name": "Fundamentals of Network Engineering",
+      "show": false,
       "url": "https://www.udemy.com/certificate/UC-0a49d23e-036a-4c80-ad5a-410ccb877ebb/",
       "issuer": "Udemy",
       "summary": "Learned about under the hood mechanisms of network protocols"
     },
     {
       "name": "Fundamentals of Netowrk Engineering",
+      "show": false,
       "url": "https://www.udemy.com/certificate/UC-0a49d23e-036a-4c80-ad5a-410ccb877ebb/",
       "issuer": "Udemy",
       "summary": "Learned about how servers work at the core, how different layer protocls work and what are the challenges"
     },
     {
-      "name":"Supervised Machine Learning: Regression and Classification",
-      "url":"https://coursera.org/share/0ef4defbf44ee7d868c52c7e1a3bb94f",
-      "issuer":"Coursera",
-      "summary":"Supervised learning from scratch, learning about mathematical algorithms working as backbone of machine learning models"
+      "name": "Supervised Machine Learning: Regression and Classification",
+      "url": "https://coursera.org/share/0ef4defbf44ee7d868c52c7e1a3bb94f",
+      "issuer": "Coursera",
+      "summary": "Supervised learning from scratch, learning about mathematical algorithms working as backbone of machine learning models"
     }
   ],
   "projects": [
@@ -181,7 +195,7 @@
       "name": "MongoDB vs PostgreSQL benchmarking for storing documents",
       "url": "https://github.com/zhalok/mongodb-bson-vs-postgres-jsonb-benchmarking",
       "stack": ["Golang", "JavaScript"],
-      "show": true,
+      "show": false,
       "contributions": [
         "Ran MongoDB and PostgreSQL in docker",
         "Built server side applications for connecting with MongoDB and PostgreSQL",
@@ -189,6 +203,51 @@
         "Built prometheus scraper for extracting database internal metrics and footprints",
         "Writen load testing client in golang to simulate concurrent requests with Goroutines",
         "Built grafana dashboard to observe the metrics"
+      ]
+    },
+    {
+      "name": "Data Stores **Python**",
+      "url": "https://github.com/zhalok/data-stores-python",
+      "stack": ["**Python**", "Socket", "System Calls"],
+      "show": false,
+      "contributions": [
+        "Built TCP servers with stream sockets in multi-threaded one thread per connection i/o, single-thread non-blocking i/o and single-threaded non-blocking event-driven i/o",
+        "Conducted stress testing with high load concurrency simulation with goroutines",
+        "Observed resource usages of containers via cAdvisor",
+        "Scraped metrics from cAdvisor using prometheus and showed them in Grafana",
+        "Demo: https://bit.ly/3UFJfPx"
+      ]
+    },
+    {
+      "name": "Remote Browser Control",
+      "url": "https://github.com/zhalok/remote-browser-control",
+      "stack": ["Playwright", "**Python**", "FastAPI", "WebSocket"],
+      "contributions": [
+        "Built FastAPI app for receiving commands for playwright to apply on browser session via websocket and emit current snapshot of the browser",
+        "Created a front end app with react to render the remote browser session and also send commands via websocket",
+        "Demo: https://bit.ly/4wDD7om"
+      ]
+    },
+    {
+      "name": "Invoice Extractor",
+      "url": "https://github.com/zhalok/invoice-extractor.git",
+      "stack": ["**Python**"],
+      "show": true,
+      "contributions": [
+        "Automated reading of supplier invoices and verifying the extracted data before registering into a (mock) accounting system",
+        "Added a human review step between extraction and registration to avoid blind automation, since it nearly caused a duplicate payment per the client's brief",
+        "Demo: https://youtu.be/BsikeXZiBuI"
+      ]
+    },
+    {
+      "name": "AI Product Search",
+      "url": "https://github.com/zhalok/ai-product-search",
+      "stack": ["FastAPI", "VectorDB (Qdrant)", "RabbitMQ", "SBERT"],
+      "show": false,
+      "contributions": [
+        "Built async vector indexing pipeline from csv file with RabbitMQ and Qdrant",
+        "Built inferencing and searching pipeline with FastAPI",
+        "Used finetuned self hosted SBERT model for generating embedding"
       ]
     },
     {
@@ -203,7 +262,7 @@
         "Promtail",
         "Docker"
       ],
-      "show": true,
+      "show": false,
       "contributions": [
         "Extracted postgres execution stats, container metrics as prometheus format",
         "Built grafana dashboard for observing the prometheus metrics",
@@ -215,44 +274,11 @@
     {
       "name": "Obstainer",
       "url": "https://github.com/zhalok/obstainer",
-      "stack": ["Golang"],
+      "stack": ["Golang", "Docker"],
       "show": true,
       "contributions": [
         "Built prometheus scraper for extracting container metrics from cgroup",
         "Visualized container metrics in grafana dashboard"
-      ]
-    },
-    {
-      "name": "Data Stores Python",
-      "url": "https://github.com/zhalok/data-stores-python",
-      "stack": ["Python", "Socket", "System Calls"],
-      "contributions": [
-        "Built TCP servers with stream sockets in multi-threaded one thread per connection i/o, single-thread non-blocking i/o and single-threaded non-blocking event-driven i/o",
-        "Conducted stress testing with high load concurrency simulation with goroutines",
-        "Observed resource usages of containers via cAdvisor",
-        "Scraped metrics from cAdvisor using prometheus and showed them in Grafana",
-        "Demo: https://bit.ly/3UFJfPx"
-      ]
-    },
-    {
-      "name": "Remote Browser Control",
-      "url": "https://github.com/zhalok/remote-browser-control",
-      "stack": ["Playwright", "Python", "FastAPI", "WebSocket"],
-      "contributions": [
-        "Built FastAPI app for receiving commands for playwright to apply on browser session via websocket and emit current snapshot of the browser",
-        "Created a front end app with react to render the remote browser session and also send commands via websocket",
-        "Demo: https://bit.ly/4wDD7om"
-      ]
-    },
-    {
-      "name": "AI Product Search",
-      "url": "https://github.com/zhalok/ai-product-search",
-      "stack": ["FastAPI", "VectorDB (Qdrant)", "RabbitMQ", "SBERT"],
-      "show": true,
-      "contributions": [
-        "Built async vector indexing pipeline from csv file with RabbitMQ and Qdrant",
-        "Built inferencing and searching pipeline with FastAPI",
-        "Used finetuned self hosted SBERT model for generating embedding"
       ]
     }
   ]

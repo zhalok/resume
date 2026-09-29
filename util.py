@@ -59,7 +59,7 @@ def get_section_renderers(data, latex):
     def render_projects():
         projects = data.get("projects", [])
         if projects:
-            latex.append(r"\section*{Pet Projects}")
+            latex.append(r"\section*{Projects}")
             for proj in projects:
                 if "show" in proj and proj["show"] == False:
                     continue
@@ -147,7 +147,7 @@ def get_section_renderers(data, latex):
                 elif release_date:
                     latex.append(r"\textit{%s}\\" % release_date)
                 if url:
-                    latex.append(r"\small %s\\" % url)
+                    latex.append(r"\small %s" % url)
                 if contributions:
                     latex.append(r"\begin{itemize}")
                     for contribution in contributions:
