@@ -34,20 +34,29 @@
       "position": "Software Engineer 2",
       "startDate": "2025-04-01",
       "highlights": [
-        "Built **Florence** an **AI voice assistant** which handles around 80 percent of our ride initiation requests",
-        "Developed internal **VoIP** testing tools for simulating calls for the voice agent",
-        "Built a source control pipeline to manage **11Labs agent as code**",
-        "Managed **CI/CD pipeline** for deploying agent",
-        "Integrated Intercom based human agent call center with AI call center for transferring calls as fallback",
-        "Built **Grafana dashboard** for monitoring the AI agent performance",
-        "Contributed to **Langgraph** based orchestrator service for a large scale **AI Agent**",
-        "Enhanced realtime notification pipeline with push based mechanism with **Redis Pub/Sub**, **CDC**, **Redis Streams**",
-        "Migrated legacy code from **Express JS** to **Nest JS** for cleaner domain driven design",
-        "Enhanced existing **RBAC** system with realtime access revocation",
-        "Investigated production incidents based on logs and traces from **CloudWatch** and **Grafana**",
-        "Optimized MongoDB query performance by **41 percent** using covered atlas search index scan",
-        "Reduced network content download time by **66 percent** with default query projection",
-        "Conducted AI-driven development using **Kiro**"
+        "Built realtime solutions using **Redis Pub/Sub** and **Websocket**",
+        "Built end to end features with **React JS** and **Express JS",
+        "Built async solutions with **AWS SQS** and **Kafka**",
+        "Architected and managed **AI voice agent** solution for customer support team",
+        "Built tools for internal system testing, monitoring and tracing",
+        "Migrated legacy **ExpressJS** service to **NestJS**",
+        "Improved database performance",
+
+        "Containerized and deployed applications to **AWS ECS**",
+        "Used **AWS ECR** for managint container images",
+        "Provisioned AWS infrastructure as code using **CloudFormation**",
+        "Automated deployment with codepipeline",
+
+        "Built **Grafana** dashboards for visualizing and exporting metrics, logs and traces from multiple sources",
+        "Set alerts for detecting downtimes and failures upfront",
+        "Investigated incidents and fixed root causes based on **Logs traces and application event**",
+
+        "Conducted load testing to ensure system reliability at scale before releasing to production",
+        "Writen unit tests to ensure code reliability",
+        "Automated build check, unit test check in continious integration pipeline",
+       
+        "Conducted spec driven development for AI assisted coding",
+        "Managed SDLC with isolated dev, stage and production environments"
       ]
     },
     {
@@ -180,7 +189,7 @@
     },
     {
       "name": "Optimizing MongoDB Performance with Tuning Tools",
-      "show":false,
+      "show": false,
       "url": "https://www.credly.com/badges/e861b7b4-028a-47d4-aed6-7e586d4d95da",
       "issuer": "MongoDB",
       "summary": "Learned about diagnosing and tuning MongoDB performance using database tooling"
@@ -278,7 +287,10 @@
         "Promtail"
       ],
       "show": true,
-      "contributions": ["Benchmark results: https://bit.ly/4dbwS4h","Github: https://bit.ly/3TYSpGZ"]
+      "contributions": [
+        "Benchmark results: https://bit.ly/4dbwS4h",
+        "Github: https://bit.ly/3TYSpGZ"
+      ]
     },
     {
       "name": "PostgreSPECTOR",
@@ -293,7 +305,10 @@
         "Docker"
       ],
       "show": true,
-      "contributions": ["Demo: https://youtu.be/w2OCn0X3bRw", "Github: https://bit.ly/4y8AFXX"]
+      "contributions": [
+        "Demo: https://youtu.be/w2OCn0X3bRw",
+        "Github: https://bit.ly/4y8AFXX"
+      ]
     },
     {
       "name": "Obstainer",
@@ -307,7 +322,10 @@
         "Promtail"
       ],
       "show": true,
-      "contributions": ["Demo: https://youtu.be/sifxPdFs2AE","Github: https://bit.ly/4y8AL1L"]
+      "contributions": [
+        "Demo: https://youtu.be/sifxPdFs2AE",
+        "Github: https://bit.ly/4y8AL1L"
+      ]
     },
     {
       "name": "Data Stores Python",
