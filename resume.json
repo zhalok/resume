@@ -34,17 +34,18 @@
       "position": "Software Engineer 2",
       "startDate": "2025-04-01",
       "highlights": [
+        "Built realtime solutions using **Redis Pub/Sub** and **Websocket**",
+        "Built end to end features with **React JS** and **Express JS",
+        "Built async solutions with **AWS SQS** and **Kafka**",
+        "Architected and managed **AI voice agent** solution for customer support team",
         "Built tools for internal system testing, monitoring and tracing",
+        "Migrated legacy **ExpressJS** service to **NestJS**",
         "Improved database performance",
 
         "Containerized and deployed applications to **AWS ECS**",
         "Used **AWS ECR** for managint container images",
-        "Managed AWS infrastructure as code using **CloudFormation**",
-        "Automated deployment with **Codepipeline**",
-        "Configured Route 53 DNS records for routing traffic to cloudfront distribution",
-        "Configured Route 53 DNS records for routing traffic to AWS ALB-backed ECS services",
-        "Managed TLS certificates with **AWS Certificate Manager**",
-        "Deployed static front-end app in **Cloudfront** for edge caching",
+        "Provisioned AWS infrastructure as code using **CloudFormation**",
+        "Automated deployment with codepipeline",
 
         "Built **Grafana** dashboards for visualizing and exporting metrics, logs and traces from multiple sources",
         "Set alerts for detecting downtimes and failures upfront",
@@ -53,7 +54,7 @@
         "Conducted load testing to ensure system reliability at scale before releasing to production",
         "Writen unit tests to ensure code reliability",
         "Automated build check, unit test check in continious integration pipeline",
-
+       
         "Conducted spec driven development for AI assisted coding",
         "Managed SDLC with isolated dev, stage and production environments"
       ]
@@ -64,20 +65,15 @@
       "startDate": "2024-10-01",
       "endDate": "2025-10-31",
       "highlights": [
-        "Maintained reliability and performance of **Golang based miroservices** ",
-        "Ingested event logs into Opensearch (AWS managed elasticsearch)",
-        "Applied distributed tracing between microservices using OpenTelemetry",
-
-        "Worked as **on-call engineer** to fix production incidents",
-        "Fixed root cause of critical production incidents across multiple services using metrics, logs, and traces from **Grafana**",
-        "Conducted **Load Testing** and built dashboards to observe the performance metrics under high stress",
-        "Managed application infrastructure in **AWS ECS**",
-        "Managed CI/CD pipeline using **Github Actions**",
-        "Managed infrastructure as code with **AWS Cloudformation**",
-
-        "Followed standard SDLC practices",
-        "Written **unit tests** to ensure code reliability",
-        "Configured alerts in **Grafana** with **Slack** integration for real-time notification on any potential dincident",
+        "Ensured reliability and performance of **Golang** based B2B platform",
+        "**Traced race conditions** between distributed services that was causing p1 incidents and confusing user experiences",
+        "Investigated and fixed root cause of critical production incidents using metrics, logs, and traces from **Grafana**",
+        "Conducted **Load Testing** and built dashboards to observe the performance of the entire system under high stress",
+        "Written scripts for data fix to mitigate incidents",
+        "Contributed to the modernization of B2B service, making architectural decisions and strategies for efficient migration",
+        "Written unit tests to ensure **80 percent coverage**",
+        "Designed asynchronous event-driven pipelines using **SQS** and **Kinesis Streams**",
+        "Configured alerts in **Grafana** with **Slack** integration for real-time notification on any potential incident",
         "Used **Windsurf** for studying legacy codebases efficiently"
       ]
     },
@@ -87,13 +83,16 @@
       "startDate": "2023-10-01",
       "endDate": "2025-02-01",
       "highlights": [
+        "Architected and built a scalable REST API with **NestJS**",
+        "Designed an AI generation pipeline using **LangChain** for structured prompt management and multi-step chaining",
         "Integrated **Langfuse** for LLM observability, enabling cost tracking and performance tracing across model calls",
         "Decoupled heavy workloads from the main request cycle using asynchronous **RabbitMQ** consumers, improving resource efficiency",
-        "Enhanced realtime UX with server side events",
+        "Enhanced UX by implementing real-time streaming of AI-generated responses",
         "Optimized load performance using a hybrid lazy-loading and preloading strategy",
         "Acted as a technical advisor in stakeholder discussions, bridging engineering constraints with business goals",
-        "Managed self-hosted containerized infrastructure on **AWS EC2** using **Coolify** and **Docker**, supporting **500+ active users**",
-        "Integrated **Sentry** alert"
+        "Mentored a team of 3 engineers on system architecture patterns and backend best practices",
+        "Managed self-hosted infrastructure on **AWS EC2** using **Coolify**, supporting **500+ active users**",
+        "Integrated **Stripe** to handle recurring billing, subscription lifecycle, and payment management"
       ]
     },
     {
@@ -210,7 +209,6 @@
     {
       "name": "Fundamentals of Database Engineering",
       "url": "https://www.udemy.com/certificate/UC-afe8cbda-1420-4cca-a833-aed013e7a6e2/",
-      "show": false,
       "issuer": "Udemy",
       "summary": "Learned about ACID, Data organization, Indexing, Partitioning, Sharding, Concurrency control, Replication, Sharding, Paritioning etc"
     },
@@ -290,8 +288,6 @@
       ],
       "show": true,
       "contributions": [
-        "Built prometheus scrapper for exporting performance metrics and storage footprints for MongoDB and PostgreSQL",
-        "Simulated high concurrency and observed the metrics under high stress",
         "Benchmark results: https://bit.ly/4dbwS4h",
         "Github: https://bit.ly/3TYSpGZ"
       ]
@@ -310,9 +306,6 @@
       ],
       "show": true,
       "contributions": [
-        "Built prometheus scrapper for exporting postgres internal metrics like average query time, CPU usage, heap usage etc.",
-        "Built grafana dashboard for visualizing prometheus metrics",
-        "Simulated stress using pgbench",
         "Demo: https://youtu.be/w2OCn0X3bRw",
         "Github: https://bit.ly/4y8AFXX"
       ]
@@ -330,9 +323,6 @@
       ],
       "show": true,
       "contributions": [
-        "Built Golang based prometheus scrapper for capturing container metrics from cgroup",
-        "Extracted docker logs using promtail and pushed to loki",
-        "Built grafana dashboards for visualizing metrics from prometheus and logs from loki data source",
         "Demo: https://youtu.be/sifxPdFs2AE",
         "Github: https://bit.ly/4y8AL1L"
       ]
@@ -343,8 +333,6 @@
       "stack": ["Python", "Socket", "System Calls", "Docker"],
       "show": true,
       "contributions": [
-        "Built simple key-value data store using raw TCP socket using different communication architectures (single threaded, multi-threaded, single threaded event-driven)",
-        "Collected CPU usage, Memory usage, Network usage using cAdvisor",
         "Benchmark results: https://bit.ly/3V6UUr9",
         "Github: https://bit.ly/4xMsr7q"
       ]
@@ -363,7 +351,6 @@
     },
     {
       "name": "Go Http From Scratch System Calls",
-      "show": false,
       "description": "HTTP server implemented from raw sockets and system calls in Go, without the net/http package.",
       "stack": ["Golang", "Syscalls", "OSSignals", "Sockets"],
       "contributions": ["Github: https://bit.ly/4z6JOBb"]
