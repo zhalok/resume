@@ -107,7 +107,7 @@
         "Integrated Stripe and Paypal payment gateways",
         "Synced client app in realtime with webhook event",
         "Implemented safe transactional credit transfer with MongoDB sessions",
-        "Built YOLO inference pipeline with ONNX runtime"
+        "Built YOLO inference pipeline with ONNX runtime, deployed in DigitalOcean droplet"
       ]
     },
     {
