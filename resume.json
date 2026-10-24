@@ -65,15 +65,15 @@
       "endDate": "2025-10-31",
       "highlights": [
         "Maintained reliability and performance of **Golang based miroservices** ",
-        "Ingested event logs into Opensearch (AWS managed elasticsearch)",
-        "Applied distributed tracing between microservices using OpenTelemetry",
+        "Ingested event logs into **Opensearch** (AWS managed elasticsearch)",
+        "Applied distributed tracing between microservices using **OpenTelemetry**",
 
         "Worked as **on-call engineer** to fix production incidents",
-        "Fixed root cause of critical production incidents across multiple services using metrics, logs, and traces from **Grafana**",
+        "**Fixed root cause** of critical production incidents across multiple services using metrics, logs, and traces from **Grafana**",
         "Conducted **Load Testing** and built dashboards to observe the performance metrics under high stress",
-        "Managed application infrastructure in **AWS ECS**",
+        "Deployed and managed containerized application in **AWS ECS**",
         "Managed CI/CD pipeline using **Github Actions**",
-        "Managed infrastructure as code with **AWS Cloudformation**",
+        "Managed infrastructure resources as code with **AWS Cloudformation**",
 
         "Followed standard SDLC practices",
         "Written **unit tests** to ensure code reliability",
@@ -92,8 +92,7 @@
         "Enhanced realtime UX with server side events",
         "Optimized load performance using a hybrid lazy-loading and preloading strategy",
         "Acted as a technical advisor in stakeholder discussions, bridging engineering constraints with business goals",
-        "Managed self-hosted containerized infrastructure on **AWS EC2** using **Coolify** and **Docker**, supporting **500+ active users**",
-        "Integrated **Sentry** alert"
+        "Managed self-hosted containerized infrastructure on **AWS EC2** using **Coolify** and **Docker**, supporting **500+ active users**"
       ]
     },
     {
