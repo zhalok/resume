@@ -75,18 +75,16 @@
       "position": "Software Engineer 2",
       "startDate": "2025-04-01",
       "highlights": [
-        "Implemented push based realtime system using Redis PubSub",
-        "Generated notifications and pushed in Redis Streams via MongoDB CDC realm trigger",
-        "Implemented RBAC validation and realtime access revoke on role change",
-        "Built endpoints for AI agent tool calls",
-        "Built AI call center agent with ElevenLabs",
-        "Integrated human call center as fallback for AI callcenter service",
-        "Managed ElevenLabs AI agent as code with **Python** SDK, building a CI/CD deploy pipeline that fetches the agent config from the development agent, replicates it into staging/production with injected environment config, and avoids shipping UI-edited agents directly for better auditability",
-        "Built a **Python** voice service (ai-service) with HTTP and WebSocket endpoints: Twilio hits the HTTP endpoint to start a session, receives TwiML pointing to the WebSocket endpoint with the session id, then streams voice over that WebSocket connection",
-        "Streamed incoming voice audio from the WebSocket connection to the LLM orchestration service over gRPC streams",
-        "Integrated Langfuse for tracing and monitoring the voice AI agent pipeline",
-        "Managed infrastructure in AWS ECS",
-        "Debugged build and deployment issues"
+        "Built voice AI agent for customer support",
+        "Integrated voice AI agent with existing callcenter for handling fallback",
+        "Built metrics consuming pipeline for monitoring AI agent",
+        "Containerized and deployed AI services to ECS",
+        "Managed automated pipeline for deploying AI agent",
+        "Built custom VoIP tool for testing voice AI agent",
+        "Integrated AI agent with core system data source",
+        "Built dashboards for monitoring AI agent performance",
+        "Set alerting for detecting failures and downtime in AI agent",
+        "Integrated langfuse for tracing AI agent activity across multiple services"
       ]
     },
     {
@@ -95,14 +93,12 @@
       "startDate": "2024-10-01",
       "endDate": "2026-03-31",
       "highlights": [
-        "Worked on B2B modernization with Golang and AWS based services like DynamoDB, Lambda, SQS, ECS",
-        "Performed load testing experiment with go script and created a dashboard with necessary metrics to observe the changes in high load",
-        "Implemented asynchronous business logics with SQS, Lambda (go) and Kinesis streams",
-        "Fixed and investigated production incidents",
-        "Collaborated with data engineering team for fixing data discrepancy issues during migration",
-        "Written go scripts for resolving incident and migration of data",
-        "Contributed to data migration using **Python** and Apache Spark scripts",
-        "Fixed github actions deployment failures"
+       "Worked as on-call engineer to provide technical support to the customer raised issues",
+       "Investigated and fixed root cause of critical production incidents",
+       "Mitigated production incidents with scripting",
+       "Conducted load testing to ensure system stability before new release",
+       "Monitored metrics, logs and traces for detecting failures",
+       "Modernized legacy B2B service with golang and AWS services"
       ]
     },
     {
@@ -110,15 +106,7 @@
       "position": "Fullstack Engineer",
       "startDate": "2023-10-01",
       "endDate": "2025-02-01",
-      "highlights": [
-        "Built an ai-service entirely in **Python**, consuming RabbitMQ as the entrypoint invocation for heavy AI workloads like vector search and LLM orchestration",
-        "Built AI generation service with Langchain, FastAPI and OpenAI models",
-        "Built websocket and server sent events endpoints for realtime AI generation delivery",
-        "Created RabbitMQ consumers for handling heavy workloads asyncly with PikaClient",
-        "Offloaded event loop blocking sync tasks into background tasks",
-        "Scheduled gathered coroutines for concurrent resolutions",
-        "Traced event loop blocking issues with sync operations and optimized the response time"
-      ]
+      "highlights": ["Built AI "]
     },
     {
       "name": "Innovext IT",
@@ -160,7 +148,7 @@
     },
     {
       "name": "Detecting Communal Violence in Texts",
-      "show": false,
+      "show": true,
       "publisher": "Association for Computational Linguistics",
       "releaseDate": "May 2024",
       "url": "https://aclanthology.org/2023.banglalp-1.25/",
