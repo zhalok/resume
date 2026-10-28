@@ -153,6 +153,7 @@
       "publisher": "Association for Computational Linguistics",
       "releaseDate": "May 2024",
       "url": "https://aclanthology.org/2023.banglalp-1.25/",
+      "show":false,
       "contributions": [
         "Curated and annotated a large-scale dataset of violence-related texts aggregated from multiple heterogeneous sources",
         "Benchmarked multiple pretrained BERT variants to identify the optimal backbone for communal violence detection",
@@ -212,7 +213,7 @@
       "name": "Fundamentals of Database Engineering",
       "url": "https://www.udemy.com/certificate/UC-afe8cbda-1420-4cca-a833-aed013e7a6e2/",
       "issuer": "Udemy",
-      "summary": "Learned about ACID, Data organization, Indexing, Partitioning, Sharding, Concurrency control, Replication, Sharding, Paritioning etc"
+      "summary": "Learned about ACID, Data organization, Indexing, Partitioning, Sharding, Concurrency control, Replication, Sharding"
     },
     {
       "name": "Supervised Machine Learning: Regression and Classification",
