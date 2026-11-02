@@ -337,7 +337,7 @@
       ]
     },
     {
-      "name": "Data Stores Python",
+      "name": "Python TCP Server",
       "description": "Experiments comparing TCP server I/O models (thread-per-connection, non-blocking, event-driven) under load.",
       "stack": ["Python", "Socket", "System Calls", "Docker"],
       "show": true,
