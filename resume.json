@@ -76,6 +76,7 @@
         "Written unit tests to ensure **80 percent coverage**",
         "Designed asynchronous event-driven pipelines using **SQS** and **Kinesis Streams**",
         "Configured alerts in **Grafana** with **Slack** integration for real-time notification on any potential incident",
+        "Co-ordinated with other teams in order to ensure seamless delivery",
         "Used **Windsurf** for studying legacy codebases efficiently"
       ]
     },
@@ -107,7 +108,6 @@
         "Built features for online healthcare platform with NextJS, Express JS, MongoDB",
         "Integrated Stripe and Paypal payment gateways",
         "Synced client app in realtime with webhook event",
-        "Implemented safe transactional credit transfer with MongoDB sessions",
         "Built YOLO inference pipeline with ONNX runtime"
       ]
     },
@@ -192,7 +192,7 @@
     },
     {
       "name": "Optimizing MongoDB Performance with Tuning Tools",
-      "show": false,
+      "show": true,
       "url": "https://www.credly.com/badges/e861b7b4-028a-47d4-aed6-7e586d4d95da",
       "issuer": "MongoDB",
       "summary": "Learned about diagnosing and tuning MongoDB performance using database tooling"
@@ -201,6 +201,7 @@
       "name": "Fundamentals of Operating Systems",
       "url": "https://www.udemy.com/certificate/UC-ff0d44a3-8917-40cd-aef9-a01e258aee49/",
       "issuer": "Udemy",
+      "show": false,
       "summary": "Learned about Process structure, Memory managment, CPU cycles, I/O management"
     },
     {
@@ -211,6 +212,7 @@
     },
     {
       "name": "Fundamentals of Database Engineering",
+      "show":false,
       "url": "https://www.udemy.com/certificate/UC-afe8cbda-1420-4cca-a833-aed013e7a6e2/",
       "issuer": "Udemy",
       "summary": "Learned about ACID, Data organization, Indexing, Partitioning, Sharding, Concurrency control, Replication, Sharding"
@@ -219,7 +221,7 @@
       "name": "Supervised Machine Learning: Regression and Classification",
       "url": "https://www.coursera.org/account/accomplishments/certificate/SZT92254XUUY",
       "issuer": "Coursera",
-      "show": false,
+      "show": true,
       "summary": "Learned about foundational fundamental of regression and classification machine learning algorithms"
     },
     {
@@ -324,7 +326,7 @@
         "Loki",
         "Promtail"
       ],
-      "show": true,
+      "show": false,
       "contributions": [
         "Demo: https://youtu.be/sifxPdFs2AE",
         "Github: https://bit.ly/4y8AL1L"
@@ -334,7 +336,7 @@
       "name": "Data Stores Python",
       "description": "Experiments comparing TCP server I/O models (thread-per-connection, non-blocking, event-driven) under load.",
       "stack": ["Python", "Socket", "System Calls", "Docker"],
-      "show": true,
+      "show": false,
       "contributions": [
         "Benchmark results: https://bit.ly/3V6UUr9",
         "Github: https://bit.ly/4xMsr7q"
@@ -354,6 +356,7 @@
     },
     {
       "name": "Go Http From Scratch System Calls",
+      "show": false,
       "description": "HTTP server implemented from raw sockets and system calls in Go, without the net/http package.",
       "stack": ["Golang", "Syscalls", "OSSignals", "Sockets"],
       "contributions": ["Github: https://bit.ly/4z6JOBb"]
@@ -363,7 +366,7 @@
       "description": "Semantic product search over CSV catalogs using SBERT embeddings, Qdrant and an async RabbitMQ indexing pipeline.",
       "url": "https://github.com/zhalok/ai-product-search",
       "stack": ["FastAPI", "VectorDB (Qdrant)", "RabbitMQ", "SBERT"],
-      "show": false,
+      "show": true,
       "contributions": [
         "Built async vector indexing pipeline from csv file with RabbitMQ and Qdrant",
         "Built inferencing and searching pipeline with FastAPI",
