@@ -75,16 +75,18 @@
       "position": "Software Engineer 2",
       "startDate": "2025-04-01",
       "highlights": [
-        "Built voice AI agent for customer support",
-        "Integrated voice AI agent with existing callcenter for handling fallback",
-        "Built metrics consuming pipeline for monitoring AI agent",
+        "Built **voice AI agent** for customer support",
+        "Built multi-agent orchestration with **Langgraph**",
+        "Integrated AI service with core API for data retrieval",
+        "Added guardrails for not exposing PHI data",
         "Containerized and deployed AI services to ECS",
         "Managed automated pipeline for deploying AI agent",
         "Built custom VoIP tool for testing voice AI agent",
-        "Integrated AI agent with core system data source",
-        "Built dashboards for monitoring AI agent performance",
-        "Set alerting for detecting failures and downtime in AI agent",
-        "Integrated langfuse for tracing AI agent activity across multiple services"
+        "Integrated voice AI agent with existing callcenter for handling fallback",
+        "Built event ingestion pipeline with **Kafka** for monitoring AI agent",
+        "Integrated langfuse for tracing AI agent activity across multiple services",
+        "Built grafana dashboards to visualize metrics, traces and costs",
+        "Set alerting for detecting failures and downtime in AI agent"
       ]
     },
     {
@@ -93,12 +95,12 @@
       "startDate": "2024-10-01",
       "endDate": "2026-03-31",
       "highlights": [
-       "Worked as on-call engineer to provide technical support to the customer raised issues",
-       "Investigated and fixed root cause of critical production incidents",
-       "Mitigated production incidents with scripting",
-       "Conducted load testing to ensure system stability before new release",
-       "Monitored metrics, logs and traces for detecting failures",
-       "Modernized legacy B2B service with golang and AWS services"
+        "Worked as on-call engineer to provide technical support to the customer raised issues",
+        "Investigated and fixed root cause of critical production incidents",
+        "Mitigated production incidents with scripting",
+        "Conducted load testing to ensure system stability before new release",
+        "Monitored metrics, logs and traces for detecting failures",
+        "Modernized legacy B2B service with golang and AWS services"
       ]
     },
     {
@@ -106,7 +108,16 @@
       "position": "Fullstack Engineer",
       "startDate": "2023-10-01",
       "endDate": "2025-02-01",
-      "highlights": ["Built AI "]
+      "highlights": [
+        "Built AI quiz platform",
+        "Built AI workflows with **Langchain**",
+        "Traced AI workflow with **Langfuse**",
+        "Built RAG pipeline with vector embedding",
+        "Built backend services with **FastAPI**",
+        "Streamed AI responses with **Server Sent Events**",
+        "Deployed and managed **self-hosted infrastructure** in single EC2 host",
+        "Participated in business decisions as a technical consultant"
+      ]
     },
     {
       "name": "Innovext IT",
@@ -275,7 +286,7 @@
       "name": "Remote Browser Control",
       "description": "Remote-controlled Playwright browser session streamed to a React client over WebSocket.",
       "stack": ["Playwright", "Python", "FastAPI", "WebSocket"],
-      "show": true,
+      "show": false,
       "contributions": [
         "Built FastAPI app for receiving commands for playwright to apply on browser session via websocket and emit current snapshot of the browser",
         "Created a front end app with react to render the remote browser session and also send commands via websocket",
@@ -295,12 +306,12 @@
       "description": "Semantic product search over CSV catalogs using SBERT embeddings, Qdrant and an async RabbitMQ indexing pipeline.",
       "url": "https://github.com/zhalok/ai-product-search",
       "stack": ["FastAPI", "VectorDB (Qdrant)", "RabbitMQ", "SBERT"],
-      "show": false,
+      "show": true,
       "contributions": [
         "Built async vector indexing pipeline from csv file with RabbitMQ and Qdrant",
         "Built inferencing and searching pipeline with FastAPI",
         "Used finetuned self hosted SBERT model for generating embedding",
-        "Github: "
+        "Github: https://github.com/zhalok/ai-product-search"
       ]
     },
     {
@@ -319,7 +330,7 @@
       "url": "https://github.com/zhalok/invoice-extractor.git",
       "description": "Automated reading of supplier invoices and verifying the extracted data before registering into a (mock) accounting system",
       "stack": ["**Python**", "FastAPI", "RabbitMQ"],
-      "show": true,
+      "show": false,
       "contributions": [
         "Built a FastAPI upload/job-polling API and a **Python** RabbitMQ worker pool running an extract, hydrate, verify, and register pipeline",
         "Designed dual auto-submit and manual-review flows: verified invoices auto-register immediately, while unresolved supplier, duplicate, or math-mismatch cases fall back to a human review UI before submission",
@@ -339,7 +350,7 @@
         "Promtail",
         "Docker"
       ],
-      "show": false,
+      "show": true,
       "contributions": [
         "Demo: https://youtu.be/w2OCn0X3bRw",
         "Github: https://bit.ly/4y8AFXX"
