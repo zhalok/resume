@@ -37,13 +37,12 @@
         "Built tools for internal system testing, monitoring and tracing",
         "Improved database performance",
 
-        "Containerized and deployed applications to **AWS ECS**",
-        "Used **AWS ECR** for managint container images",
+        "Managed Amazon ECS task definitions for high availability and auto-scaling of containers",
+        "Managed application container images in Amazon ECR",
         "Managed AWS infrastructure as code using **CloudFormation**",
+        
         "Automated deployment with **Codepipeline**",
-        "Configured Route 53 DNS records for routing traffic to cloudfront distribution",
-        "Configured Route 53 DNS records for routing traffic to AWS ALB-backed ECS services",
-        "Managed TLS certificates with **AWS Certificate Manager**",
+        "Configured Route 53 DNS records for routing traffic to AWS resources",
         "Deployed static front-end app in **Cloudfront** for edge caching",
 
         "Built **Grafana** dashboards for visualizing and exporting metrics, logs and traces from multiple sources",
@@ -337,7 +336,7 @@
       ]
     },
     {
-      "name": "Python TCP Server",
+      "name": "Sync vs Async I/O Bechmarking for In-Memory Data Store",
       "description": "Experiments comparing TCP server I/O models (thread-per-connection, non-blocking, event-driven) under load.",
       "stack": ["Python", "Socket", "System Calls", "Docker"],
       "show": true,
